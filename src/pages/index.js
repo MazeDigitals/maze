@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.scss'
-import { Col, Container, Row } from 'reactstrap'
+import { Col, Container, Nav, NavItem, NavLink, Row, TabContent, TabPane } from 'reactstrap'
 import Header from 'components/Header/Header'
 import Footer from 'components/Footer/Footer'
 
@@ -158,8 +158,101 @@ export default function Home() {
         </section>
         {/* SERVICES SECTION */}
 
+        {/* Achivements Section */}
+        <section className={`${styles.achivement_section}`}>
+          <Container>
+            <Row className='justify-content-center'>
+              <Col className='col-md-4 text-center mb-4'>
+                <h4 className='fw-semibold text-white mb-2'>ACHIEVEMENTS</h4>
+                <p className='fw-normal text-white'>All plans include unlimited requests, unlimited revisions, and source files.</p>
+              </Col>
+            </Row>
+            <Row className='justify-content-center'>
+              <Col className='col-md-4'>
+                <div className={`${styles.card} text-center`}>
+                  <h3 className='fs-5 fw-normal'>Maze Digital is rated <br /> Excellent</h3>
+                  <div className='d-flex align-items-center justify-content-center my-2'>
+                    <img src={process.env.APP_URL + '/images/trustpilot-star.svg'} alt="icon" />
+                    <img src={process.env.APP_URL + '/images/trustpilot-star.svg'} alt="icon" />
+                    <img src={process.env.APP_URL + '/images/trustpilot-star.svg'} alt="icon" />
+                    <img src={process.env.APP_URL + '/images/trustpilot-star.svg'} alt="icon" />
+                    <img src={process.env.APP_URL + '/images/trustpilot-star.svg'} alt="icon" />
+                  </div>
+                  <p className='fs-7 fw-light'>Based on <strong className='fw-semibold'>456 reviews</strong></p>
+                  <span className='fs-6 fw-normal d-flex'><img src={process.env.APP_URL + '/images/trustpilot-logo.svg'} alt="icon" />Trustpilot</span>
+                </div>
+              </Col>
+              <Col className='col-md-4'>
+                <div className={`${styles.card} text-center`}>
+                  <h3 className='fs-5 fw-normal'>Maze Digital is rated with <br /> 4.8 Stars</h3>
+                  <div className='d-flex align-items-center justify-content-center my-2'>
+                    <img src={process.env.APP_URL + '/images/star.svg'} alt="icon" />
+                    <img src={process.env.APP_URL + '/images/star.svg'} alt="icon" />
+                    <img src={process.env.APP_URL + '/images/star.svg'} alt="icon" />
+                    <img src={process.env.APP_URL + '/images/star.svg'} alt="icon" />
+                    <img src={process.env.APP_URL + '/images/star.svg'} alt="icon" />
+                  </div>
+                  <p className='fs-7 fw-light'>Based on <strong className='fw-semibold'>152 reviews</strong></p>
+                  <span className='fs-6 fw-normal d-flex'><img src={process.env.APP_URL + '/images/google.svg'} alt="icon" />Google Reviews</span>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+        {/* Achivements Section */}
+
+        {/* PRICING SECTION */}
+        <section className={`${styles.pricing_section}`}>
+          <Container>
+            <Row className='justify-content-center'>
+              <Col className='col-md-4 text-center mb-4'>
+                <h4 className='fw-semibold mb-2'>PRICING</h4>
+                <p className='fw-normal'>All plans include unlimited requests, unlimited revisions, and source files.</p>
+              </Col>
+            </Row>
+            <Row>
+              <Col className='col-md-12'>
+                <Nav className={`justify-content-center border-0 ${styles.tab_cont}`} tabs>
+                  <NavItem className={`${styles.tab_item}`}>
+                    <NavLink className={`${styles.tab_link} active`} onClick={function noRefCheck() { }}>Ecommerce</NavLink>
+                  </NavItem>
+                  <NavItem className={`${styles.tab_item}`}>
+                    <NavLink className={`${styles.tab_link}`} onClick={function noRefCheck() { }}>Web Development</NavLink>
+                  </NavItem>
+                  <NavItem className={`${styles.tab_item}`}>
+                    <NavLink className={`${styles.tab_link}`} onClick={function noRefCheck() { }}>Design Service</NavLink>
+                  </NavItem>
+                  <NavItem className={`${styles.tab_item}`}>
+                    <NavLink className={`${styles.tab_link}`} onClick={function noRefCheck() { }}>UI/UX Design</NavLink>
+                  </NavItem>
+                </Nav>
+              </Col>
+              <Col className='col-md-4'>
+                <div className={`${styles.pricing_card}`}>
+                  <div className='p-5 text-center border-bottom'>
+                    <span>Lorem Ipsum</span>
+                    <p>Laoreet ullamcorper sed purus risus enim quam tortor, faucibus. Enim</p>
+                    <h3 className='fs-3 fw-semibold'>$3,000/m</h3>
+                    <a href='' className={`${styles.button}`}>Get Started</a>
+                  </div>
+                  <div className='p-5'>
+                    <ul>
+                      <li>Lorem ipsum dolor sit amet, consectetur</li>
+                      <li>Lorem ipsum dolor sit amet, consectetur</li>
+                      <li>Lorem ipsum dolor sit amet, consectetur</li>
+                      <li>Lorem ipsum dolor sit amet, consectetur</li>
+                    </ul>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+        {/* PRICING SECTION */}
+
         <Footer />
       </main>
     </>
   )
 }
+

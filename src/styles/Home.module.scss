@@ -147,4 +147,130 @@
       line-height: 1.5;
     }
   }
+
+  .achivement_section {
+    background: url(../../public/images/achivement-bg.svg) center/cover no-repeat;
+    padding: 6rem 0;
+
+    .card {
+      background: var(--white);
+      padding: 2rem;
+      box-shadow: 0px 2px 24px rgba(27, 59, 119, 0.16);
+      border-radius: 6px;
+
+      h3 {
+        font-family: 'Open Sans';
+      }
+
+      div {
+        gap: 5px;
+      }
+
+      span {
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .pricing_section {
+    padding: 4rem 0;
+
+    h4 {
+      color: #2D2D2D;
+    }
+
+    p {
+      color: #4A4A4A;
+    }
+
+    .tab_cont {
+      gap: 1.5rem;
+
+      .tab_item {
+        padding: 0;
+
+        .tab_link {
+          border: 0;
+          font-size: 1rem;
+          font-weight: 400;
+          padding: 0.5rem 0.25rem;
+          color: rgba(0, 0, 0, 0.85);
+          display: block;
+          border-bottom: 2px solid transparent;
+
+          &:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+          }
+        }
+      }
+    }
+
+    .pricing_card {
+      background: #FAFCFC;
+      border: 1px solid #ECECEC;
+      box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.13);
+      border-radius: 12px;
+
+      span {
+        background: #F1F7FB;
+        border-radius: 20px;
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--primary);
+      }
+
+      p {
+        color: #4A4A4A;
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 1.5rem 0;
+      }
+
+      h3 {
+        color: #1D1D1D;
+        margin: 1rem 0;
+      }
+
+      .button {
+        color: var(--primary);
+        display: inline-block;
+        background: #F7F7F7;
+        border: 1px solid var(--primary);
+        border-radius: 4px;
+        padding: 0.75rem 1.25rem;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          font-size: 14px;
+          line-height: 19px;
+          color: #2D2D2D;
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          margin-bottom: 0.75rem;
+
+          &::before {
+            content: '';
+            width: 18px;
+            height: 18px;
+            display: inline-block;
+            background: url(../../public/images/check.svg) center/contain no-repeat;
+          }
+        }
+      }
+    }
+  }
 }
