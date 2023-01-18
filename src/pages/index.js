@@ -1,10 +1,11 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import React from 'react'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.scss'
-import { Col, Container, Nav, NavItem, NavLink, Row, TabContent, TabPane } from 'reactstrap'
+import { Col, Container, Row } from 'reactstrap'
 import Header from 'components/Header/Header'
 import Footer from 'components/Footer/Footer'
+import Pricing from 'components/Home/Pricing'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -201,54 +202,22 @@ export default function Home() {
         </section>
         {/* Achivements Section */}
 
-        {/* PRICING SECTION */}
-        <section className={`${styles.pricing_section}`}>
+        <Pricing />
+
+        {/* Quotation Section */}
+        <section className={`${styles.custom_pack}`}>
           <Container>
-            <Row className='justify-content-center'>
-              <Col className='col-md-4 text-center mb-4'>
-                <h4 className='fw-semibold mb-2'>PRICING</h4>
-                <p className='fw-normal'>All plans include unlimited requests, unlimited revisions, and source files.</p>
+            <Row className='align-items-center'>
+              <Col className='col-md-7'>
+                <h3 className='text-white fw-semibold'>Custom Jumbo Pack</h3>
+                <p className='text-white fw-normal'>Laoreet ullamcorper sed purus risus enim quam tortor,<br /> faucibus. EnimLaoreet ullamcorper sed purus risus enim<br /> quam tortor, faucibus. </p>
               </Col>
-            </Row>
-            <Row>
-              <Col className='col-md-12'>
-                <Nav className={`justify-content-center border-0 ${styles.tab_cont}`} tabs>
-                  <NavItem className={`${styles.tab_item}`}>
-                    <NavLink className={`${styles.tab_link} active`} onClick={function noRefCheck() { }}>Ecommerce</NavLink>
-                  </NavItem>
-                  <NavItem className={`${styles.tab_item}`}>
-                    <NavLink className={`${styles.tab_link}`} onClick={function noRefCheck() { }}>Web Development</NavLink>
-                  </NavItem>
-                  <NavItem className={`${styles.tab_item}`}>
-                    <NavLink className={`${styles.tab_link}`} onClick={function noRefCheck() { }}>Design Service</NavLink>
-                  </NavItem>
-                  <NavItem className={`${styles.tab_item}`}>
-                    <NavLink className={`${styles.tab_link}`} onClick={function noRefCheck() { }}>UI/UX Design</NavLink>
-                  </NavItem>
-                </Nav>
-              </Col>
-              <Col className='col-md-4'>
-                <div className={`${styles.pricing_card}`}>
-                  <div className='p-5 text-center border-bottom'>
-                    <span>Lorem Ipsum</span>
-                    <p>Laoreet ullamcorper sed purus risus enim quam tortor, faucibus. Enim</p>
-                    <h3 className='fs-3 fw-semibold'>$3,000/m</h3>
-                    <a href='' className={`${styles.button}`}>Get Started</a>
-                  </div>
-                  <div className='p-5'>
-                    <ul>
-                      <li>Lorem ipsum dolor sit amet, consectetur</li>
-                      <li>Lorem ipsum dolor sit amet, consectetur</li>
-                      <li>Lorem ipsum dolor sit amet, consectetur</li>
-                      <li>Lorem ipsum dolor sit amet, consectetur</li>
-                    </ul>
-                  </div>
-                </div>
-              </Col>
+              <Col className='col-md-5'></Col>
             </Row>
           </Container>
         </section>
-        {/* PRICING SECTION */}
+        {/* Quotation Section */}
+
 
         <Footer />
       </main>

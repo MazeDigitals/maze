@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { useState } from 'react'
 import {
     Navbar,
@@ -17,7 +18,7 @@ function Header() {
             <Container>
                 <Navbar>
                     <NavbarBrand href="/">
-                        <img src={process.env.APP_URL + '/images/logo.svg'} alt="Logo" />
+                        <Image src={process.env.APP_URL + '/images/logo.svg'} alt="Logo"  width={116} height={32} />
                     </NavbarBrand>
                     <Nav className={`ms-auto ${styles.navlist}`}>
                         <NavItem><NavLink className={`${styles.navItem}`} href="/">About Us</NavLink></NavItem>
