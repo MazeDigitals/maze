@@ -1,0 +1,249 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --primary: #2C71F6;
+  --secondary: #1C208F;
+}
+
+/* make the customizations */
+$primary: #2C71F6;
+$secondary: #1C208F;
+$dark: #000000;
+$light: #ffffff;
+$danger: #CC2B2B;
+$success: #3BD55A;
+$warning: #FDA228;
+
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "dark": $dark,
+  "light": $light,
+  "danger": $danger,
+  "success": $success,
+  "warning": $warning
+);
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import "~bootstrap/scss/bootstrap";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  // font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1;
+  position: relative;
+
+  @media (max-height:767px) {
+    font-size: 14px;
+  }
+}
+
+/* ====== Heading and Paragraph ====== */
+h1,
+h2 {
+  font-family: inherit;
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  color: $dark;
+}
+
+h1 {
+  font-size: 3.75rem;
+  line-height: normal;
+  font-family: 'Montserrat', sans-serif;
+
+  @media (max-width:767px) {
+    font-size: 2rem;
+  }
+}
+
+h2 {
+  font-size: 2.75rem;
+  line-height: normal;
+  font-family: 'Montserrat', sans-serif;
+
+  @media (max-width:767px) {
+    font-size: 1.75rem;
+  }
+}
+
+h3 {
+  font-size: 1.75rem;
+  line-height: normal;
+
+  @media (max-width:767px) {
+    font-size: 1.25rem;
+  }
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: normal;
+
+  @media (max-width:767px) {
+    font-size: 1.125rem;
+  }
+}
+
+p {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: -0.1px;
+}
+
+/* ====== /Heading and Paragraph ====== */
+
+.text-under-line {
+  text-decoration: underline;
+}
+
+.text-bottom-line {
+  text-decoration: underline;
+}
+
+/* ====== Shadow ====== */
+.box-shadow {
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.09) !important;
+}
+
+/* ====== /Shadow ====== */
+
+
+/* ======== Border Radius ========*/
+
+.rounded-top-0 {
+  border-top-left-radius: 0 !important;
+}
+
+.rounded-right-0 {
+  border-top-right-radius: 0 !important;
+}
+
+.rounded-bottom-0 {
+  border-bottom-right-radius: 0 !important;
+}
+
+.rounded-left-0 {
+  border-bottom-left-radius: 0 !important;
+}
+
+/* ======== /Border Radius ========*/
+
+/* ============ /Font Sizes ============ */
+.fs-1 {
+  font-size: 1.7em !important;
+}
+
+.fs-2 {
+  font-size: 1.5rem !important;
+}
+
+.fs-3 {
+  font-size: 1.4rem !important;
+}
+
+.fs-4 {
+  font-size: 1.3rem !important;
+}
+
+.fs-5 {
+  font-size: 1.2rem !important;
+}
+
+.fs-6 {
+  font-size: 0.85rem !important;
+}
+
+/* ============ Font Sizes ============ */
+
+
+/* ====== Font Weight ====== */
+.fw-light {
+  font-weight: 300 !important;
+}
+
+.fw-normal {
+  font-weight: 400 !important;
+}
+
+.fw-medium {
+  font-weight: 500 !important;
+}
+
+.fw-semibold {
+  font-weight: 600 !important;
+}
+
+.fw-bold {
+  font-weight: 700 !important;
+}
+
+/* ====== /Font Weight ====== */
+
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* ============ Global Forms  ============ */
+.form-floating {
+  >.form-control {
+    height: auto;
+    padding: 0.75rem 0.75rem;
+
+    &:focus {
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+
+      ~label {
+        transform: scale(0.9rem) translateY(-0.5rem) translateX(0.15rem) !important;
+      }
+    }
+
+    &:not(:placeholder-shown) {
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+
+      ~label {
+        transform: scale(0.9rem) translateY(-0.5rem) translateX(0.15rem) !important;
+      }
+    }
+  }
+
+  >label {}
+}
+
+
+.btn-style {
+  font-size: 14px;
+  font-weight: 500;
+  color: $white;
+  background: $primary;
+  border: 1px solid $primary;
+  border-radius: 4px;
+  padding: 1.25em 1.5em;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.12);
+  &:hover{
+    background: $secondary;
+  }
+}
