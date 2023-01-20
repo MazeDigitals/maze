@@ -6,6 +6,7 @@
 }
 
 /* make the customizations */
+$white: #fff;
 $primary: #2C71F6;
 $secondary: #1C208F;
 $dark: #000000;
@@ -242,17 +243,20 @@ p {
 
 .btn-style {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   color: $white;
   background: $primary;
   border: 1px solid $primary;
   border-radius: 4px;
-  padding: 1.25em 1.5em;
-  text-transform: uppercase;
+  padding: 1em 1.25em;
+  text-transform: capitalize;
+  text-decoration: none;
   transition: 0.3s ease-in-out;
+  display: inline-block;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.12);
 
   &:hover {
     background: $secondary;
+    color: $white;
   }
 }

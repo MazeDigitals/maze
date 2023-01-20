@@ -210,9 +210,47 @@ export default function Home() {
             <Row className='align-items-center'>
               <Col className='col-md-7'>
                 <h3 className='text-white fw-semibold'>Custom Jumbo Pack</h3>
-                <p className='text-white fw-normal'>Laoreet ullamcorper sed purus risus enim quam tortor,<br /> faucibus. EnimLaoreet ullamcorper sed purus risus enim<br /> quam tortor, faucibus. </p>
+                <p className='text-white fw-normal mb-4'>Laoreet ullamcorper sed purus risus enim quam tortor,<br /> faucibus. EnimLaoreet ullamcorper sed purus risus enim<br /> quam tortor, faucibus. </p>
+                <Row>
+                  <Col className='col-md-6'>
+                    <h4 className='fs-6 text-white fw-semibold mb-3'>Website Design</h4>
+                    <ul>
+                      <li>Lorem ipsum dolor sit amet, consectetur</li>
+                      <li>Lorem ipsum dolor sit amet, consectetur</li>
+                      <li>Lorem ipsum dolor sit amet, consectetur</li>
+                    </ul>
+                  </Col>
+                  <Col className='col-md-6'>
+                    <h4 className='fs-6 text-white fw-semibold mb-3'>Social Media Design</h4>
+                    <ul>
+                      <li>Lorem ipsum dolor sit amet, consectetur</li>
+                      <li>Lorem ipsum dolor sit amet, consectetur</li>
+                      <li>Lorem ipsum dolor sit amet, consectetur</li>
+                    </ul>
+                  </Col>
+                </Row>
+                <a href='/' className='btn-style mt-5'>Get Started</a>
               </Col>
-              <Col className='col-md-5'></Col>
+              <Col className='col-md-5'>
+                <div className={`${styles.form_section}`}>
+                  <h3 className='fw-semibold'>Custom Jumbo Pack</h3>
+                  <p>Let’s get connected and level up your brand.</p>
+                  <div className={`${styles.input_field}`}>
+                    <input type="text" className='w-100' placeholder='Name' />
+                  </div>
+                  <div className={`${styles.input_field}`}>
+                    <input type="text" className='w-100' placeholder='Phone Number' />
+                  </div>
+                  <div className={`${styles.input_field}`}>
+                    <input type="text" className='w-100' placeholder='Email' />
+                  </div>
+                  <div className={`${styles.input_field}`}>
+                    <input type="text" className='w-100' placeholder='Message' />
+                  </div>
+                  <button className='btn-style w-100'>Lets Connect</button>
+                  <p className='fs-7'>Prefer Email? <a href='mailto:sale@mazeglobal.com'>sale@mazeglobal.com</a></p>
+                </div>
+              </Col>
             </Row>
           </Container>
         </section>
