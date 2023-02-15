@@ -1,0 +1,11 @@
+.awards_section {
+    padding: 6rem 0;
+    background: #F6F4FF;
+
+    @media(max-width: 767.99px) {
+        padding: 3rem 0;
+    }
+    .award_card {
+        text-align: center;
+    }
+}

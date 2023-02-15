@@ -1,0 +1,22 @@
+<svg width="1440" height="396" viewBox="0 0 1440 396" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1440" height="396" fill="url(#paint0_radial_1271_2048)"/>
+<mask id="mask0_1271_2048" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1440" height="396">
+<rect width="1440" height="396" fill="url(#paint1_radial_1271_2048)"/>
+</mask>
+<g mask="url(#mask0_1271_2048)">
+<rect x="3.05227" width="221.287" height="65.3192" rx="22" transform="matrix(0.763068 -0.646318 0.763068 0.646318 901.891 424.78)" stroke="#21EACF" stroke-opacity="0.2" stroke-width="4"/>
+<rect x="3.05227" width="221.287" height="65.3192" rx="22" transform="matrix(0.763068 -0.646318 0.763068 0.646318 1291.11 183.22)" stroke="#21EACF" stroke-opacity="0.2" stroke-width="4"/>
+<rect x="3.05227" width="108.644" height="30.6596" rx="15.3298" transform="matrix(0.763068 -0.646318 0.763068 0.646318 309.295 52.0064)" stroke="#21EACF" stroke-opacity="0.2" stroke-width="4"/>
+<rect x="3.05227" width="108.644" height="30.6596" rx="15.3298" transform="matrix(0.763068 -0.646318 0.763068 0.646318 -36.6792 328.216)" stroke="#21EACF" stroke-opacity="0.2" stroke-width="4"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_1271_2048" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(862.013 535.095) rotate(-109.763) scale(1239.21 4351.04)">
+<stop offset="0.191384" stop-color="#0875DD"/>
+<stop offset="1" stop-color="#0D2C48"/>
+</radialGradient>
+<radialGradient id="paint1_radial_1271_2048" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1440 396) rotate(-155.966) scale(1208.11 3350.2)">
+<stop offset="0.486287" stop-color="#0875DD"/>
+<stop offset="1" stop-color="#0D2C48"/>
+</radialGradient>
+</defs>
+</svg>

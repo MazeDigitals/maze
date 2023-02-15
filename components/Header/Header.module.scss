@@ -5,14 +5,113 @@
     .navlist {
         gap: 0 2rem;
 
-        .navItem {
-            color: var(--white);
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 22px;
+        @media (max-width:991.99px) {
+            gap: 1.25rem;
+        }
+
+        .nav_item {
+            position: relative;
+
+            .nav_link {
+                color: var(--white);
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                padding: 0;
+            }
+
+            &:hover {
+                .mega_menu_wrap {
+                    padding: 3rem 0;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    .mega_menu_wrap {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 90px;
+        z-index: 1;
+        height: 0;
+        overflow: hidden;
+        transition: 0.3s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::before {
+            content: '';
+            background: #f7f7f7;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            z-index: -1;
+            max-width: 400px;
+        }
+
+        .border_left {
+            border-left: 1px solid rgba(0, 0, 0, 0.15);
+        }
+
+        h3 {
+            color: #2D2D2D;
+        }
+
+        // animation: fadeIn ease 1s;
+
+        // @keyframes fadeIn {
+        //     0% {
+        //         height: 0px;
+        //     }
+
+        //     100% {
+        //         height: 500px;
+        //     }
+        // }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
             padding: 0;
+            margin: 0;
+            gap: 2rem 1rem;
+
+            li {
+                width: calc(50% - 0.5rem);
+
+                a {
+                    color: var(--primary);
+                    font-weight: 600;
+                    display: block;
+                    line-height: 1.5;
+
+                    span {
+                        display: block;
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #4A4A4A;
+                    }
+                }
+            }
+
+            &.column_list {
+                gap: 1rem;
+
+                li {
+                    a {
+                        span {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
