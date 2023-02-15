@@ -103,7 +103,7 @@ const Footer = () => {
                         </Col>
                         <Col className='col-12 mt-4'>
                             <ul className='d-flex align-items-center'>
-                                <li><p>© 2022 Maze Digital. All rights reserved </p></li>
+                                <li><p>© 2023 Maze Digital. All rights reserved </p></li>
                                 <li><a href='#' className='me-2'>Terms and Condition</a></li>
                                 <li><a href='#'>Privacy Policy</a></li>
                             </ul>
