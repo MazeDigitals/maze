@@ -137,11 +137,11 @@ function Header() {
                                         <Col className="col-md-3">
                                             <h3 className='fs-6 fw-semibold'>How we work</h3>
                                             <ul className={`flex-column ${styles.column_list}`}>
-                                                <li className='w-100'>
+                                                {/* <li className='w-100'>
                                                     <a>Project Kickoff <span>We first kick off the project by meeting with our client</span></a>
-                                                </li>
+                                                </li> */}
                                                 <li className='w-100'>
-                                                    <a>Ideation & Evaluation <span>The next step is to generate ideas for a solution to our client's problems. </span></a>
+                                                    <a>Discovery <span>The next step is to generate ideas for a solution to our client's problems. </span></a>
                                                 </li>
                                                 <li className='w-100'>
                                                     <a>Design <span>The third approachable step is to design a project plan by outlining the stages.</span></a>
