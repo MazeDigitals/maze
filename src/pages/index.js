@@ -84,7 +84,7 @@ export default function Home() {
             <Row className='justify-content-center'>
               <Col className='col-lg-9 col-12'>
                 <div className={`${styles.domainSearch}`}>
-                  <Row>
+                  {/* <Row>
                     <Col className='col-md-6 col-12'>
                       <h3 className='fw-semibold'>Domain Name Search <br className='d-none d-lg-block' /> Buy a Domain In Minutes</h3>
                     </Col>
@@ -96,6 +96,12 @@ export default function Home() {
                         <input className='form-control' type="email" placeholder='Enter the domain of your choice' />
                         <button className="btn btn-md btn-primary text-light" type='submit'>Search Domain</button>
                       </div>
+                    </Col>
+                  </Row> */}
+                  <Row>
+                    <Col className='col-md-12'>
+                      <h3 className='fw-semibold text-center'>Our mission</h3>
+                      <p className='text-center'>Our focus on user satisfaction and simplicity ensures that your product succeeds with quality code and skilled professionals, minimizing risk.</p>
                     </Col>
                   </Row>
                 </div>
@@ -352,19 +358,19 @@ export default function Home() {
                 <a href='/' className='btn-style mt-5 d-none d-md-inline-block d-lg-inline-block'>Get Started</a>
               </Col>
               <Col className='col-lg-5 col-md-6 col-12'>
-                <div className={`${styles.form_section}`}>
+                <div className={`form_section`}>
                   <h3 className='fw-semibold mb-3'>Not sure about pricing?</h3>
                   <p className='mb-4'>Let's get connected and level up your brand.</p>
-                  <div className={`${styles.input_field}`}>
+                  <div className={`input_field`}>
                     <input type="text" className='w-100' placeholder='Name' />
                   </div>
-                  <div className={`${styles.input_field}`}>
+                  <div className={`input_field`}>
                     <input type="text" className='w-100' placeholder='Phone Number' />
                   </div>
-                  <div className={`${styles.input_field}`}>
+                  <div className={`input_field`}>
                     <input type="text" className='w-100' placeholder='Email' />
                   </div>
-                  <div className={`${styles.input_field}`}>
+                  <div className={`input_field`}>
                     <textarea type="text" className='w-100' placeholder='Message'>
 
                     </textarea>

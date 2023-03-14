@@ -8,6 +8,7 @@ import useSwiperRef from './useSwiperRef';
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
+import Scrollbars from 'react-custom-scrollbars';
 
 
 
@@ -59,23 +60,25 @@ function ECommercePackages() {
                                             <a href='' className={`button`}>Get Started</a>
                                         </div>
                                         <div className='p-5'>
-                                            <ul>
-                                                <li>up to 100 products</li>
-                                                <li>Content Managment System WP</li>
-                                                <li>Mini shopping cart integration</li>
-                                                <li>Woocommerce integration</li>
-                                                <li>Payment module integration</li>
-                                                <li>Easy product search</li>
-                                                <li>Product review</li>
-                                                <li>Mobile responsive will be additional</li>
-                                                <li>Domain name (1 Year registeration)</li>
-                                                <li>Cloud Hosting (1 year)</li>
-                                                <li>SSL Certificate</li>
-                                                <li>2 Email ID's</li>
-                                                <li>100% Ownership Rights</li>
-                                                <li>100% Satisfaction Guarantee</li>
-                                                <li>100% Unique Design Guarantee</li>
-                                            </ul>
+                                            <Scrollbars style={{ height: 120 }}>
+                                                <ul>
+                                                    <li>up to 100 products</li>
+                                                    <li>Content Managment System WP</li>
+                                                    <li>Mini shopping cart integration</li>
+                                                    <li>Woocommerce integration</li>
+                                                    <li>Payment module integration</li>
+                                                    <li>Easy product search</li>
+                                                    <li>Product review</li>
+                                                    <li>Mobile responsive will be additional</li>
+                                                    <li>Domain name (1 Year registeration)</li>
+                                                    <li>Cloud Hosting (1 year)</li>
+                                                    <li>SSL Certificate</li>
+                                                    <li>2 Email ID's</li>
+                                                    <li>100% Ownership Rights</li>
+                                                    <li>100% Satisfaction Guarantee</li>
+                                                    <li>100% Unique Design Guarantee</li>
+                                                </ul>
+                                            </Scrollbars>
                                         </div>
                                     </div>
                                 </SwiperSlide>
@@ -88,29 +91,31 @@ function ECommercePackages() {
                                             <a href='' className={`button`}>Get Started</a>
                                         </div>
                                         <div className='p-5'>
-                                            <ul>
-                                                <li>Up to 500 products</li>
-                                                <li>Custom Design</li>
-                                                <li>Content Managment System</li>
-                                                <li>Custom WP or PHP development</li>
-                                                <li>Mobile responsive</li>
-                                                <li>Full shopping cart integration</li>
-                                                <li>Payment module integration</li>
-                                                <li>Easy product search</li>
-                                                <li>Product review</li>
-                                                <li>5 Promotional banner</li>
-                                                <li>Contact Form</li>
-                                                <li>Social Media Integration</li>
-                                                <li>Sign up Area (for Newsletter, Offers etc)</li>
-                                                <li>Dedicated Account Manager</li>
-                                                <li>Domain name (1 Year registeration)</li>
-                                                <li>Cloud Hosting (1 year)</li>
-                                                <li>SSL Certificate</li>
-                                                <li>5 Email ID's</li>
-                                                <li>100% Ownership Rights</li>
-                                                <li>100% Satisfaction Guarantee</li>
-                                                <li>100% Unique Design Guarantee</li>
-                                            </ul>
+                                            <Scrollbars style={{ height: 120 }}>
+                                                <ul>
+                                                    <li>Up to 500 products</li>
+                                                    <li>Custom Design</li>
+                                                    <li>Content Managment System</li>
+                                                    <li>Custom WP or PHP development</li>
+                                                    <li>Mobile responsive</li>
+                                                    <li>Full shopping cart integration</li>
+                                                    <li>Payment module integration</li>
+                                                    <li>Easy product search</li>
+                                                    <li>Product review</li>
+                                                    <li>5 Promotional banner</li>
+                                                    <li>Contact Form</li>
+                                                    <li>Social Media Integration</li>
+                                                    <li>Sign up Area (for Newsletter, Offers etc)</li>
+                                                    <li>Dedicated Account Manager</li>
+                                                    <li>Domain name (1 Year registeration)</li>
+                                                    <li>Cloud Hosting (1 year)</li>
+                                                    <li>SSL Certificate</li>
+                                                    <li>5 Email ID's</li>
+                                                    <li>100% Ownership Rights</li>
+                                                    <li>100% Satisfaction Guarantee</li>
+                                                    <li>100% Unique Design Guarantee</li>
+                                                </ul>
+                                            </Scrollbars>
                                         </div>
                                     </div>
                                 </SwiperSlide>
@@ -123,33 +128,35 @@ function ECommercePackages() {
                                             <a href='' className={`button`}>Get Started</a>
                                         </div>
                                         <div className='p-5'>
-                                            <ul>
-                                                <li>Up to 1000 products</li>
-                                                <li>Custom Design</li>
-                                                <li>Content Managment System</li>
-                                                <li>Custom WP or PHP development</li>
-                                                <li>Mobile responsive</li>
-                                                <li>Full shopping cart integration</li>
-                                                <li>Payment module integration</li>
-                                                <li>Easy product search</li>
-                                                <li>Product review</li>
-                                                <li>Facenook Pixel Installation</li>
-                                                <li>Live Chat integration</li>
-                                                <li>Google Map Integration</li>
-                                                <li>Featured product showcase</li>
-                                                <li>5 Promotional banner</li>
-                                                <li>Contact Form</li>
-                                                <li>Social Media Integration</li>
-                                                <li>Sign up Area (for Newsletter, Offers etc)</li>
-                                                <li>Dedicated Account Manager</li>
-                                                <li>Domain name (1 Year registeration)</li>
-                                                <li>Cloud Hosting (1 year)</li>
-                                                <li>SSL Certificate</li>
-                                                <li>up to 10 Email ID's</li>
-                                                <li>100% Ownership Rights</li>
-                                                <li>100% Satisfaction Guarantee</li>
-                                                <li>100% Unique Design Guarantee</li>
-                                            </ul>
+                                            <Scrollbars style={{ height: 120 }}>
+                                                <ul>
+                                                    <li>Up to 1000 products</li>
+                                                    <li>Custom Design</li>
+                                                    <li>Content Managment System</li>
+                                                    <li>Custom WP or PHP development</li>
+                                                    <li>Mobile responsive</li>
+                                                    <li>Full shopping cart integration</li>
+                                                    <li>Payment module integration</li>
+                                                    <li>Easy product search</li>
+                                                    <li>Product review</li>
+                                                    <li>Facenook Pixel Installation</li>
+                                                    <li>Live Chat integration</li>
+                                                    <li>Google Map Integration</li>
+                                                    <li>Featured product showcase</li>
+                                                    <li>5 Promotional banner</li>
+                                                    <li>Contact Form</li>
+                                                    <li>Social Media Integration</li>
+                                                    <li>Sign up Area (for Newsletter, Offers etc)</li>
+                                                    <li>Dedicated Account Manager</li>
+                                                    <li>Domain name (1 Year registeration)</li>
+                                                    <li>Cloud Hosting (1 year)</li>
+                                                    <li>SSL Certificate</li>
+                                                    <li>up to 10 Email ID's</li>
+                                                    <li>100% Ownership Rights</li>
+                                                    <li>100% Satisfaction Guarantee</li>
+                                                    <li>100% Unique Design Guarantee</li>
+                                                </ul>
+                                            </Scrollbars>
                                         </div>
                                     </div>
                                 </SwiperSlide>
@@ -162,42 +169,44 @@ function ECommercePackages() {
                                             <a href='' className={`button`}>Get Started</a>
                                         </div>
                                         <div className='p-5'>
-                                            <ul>
-                                                <li>Up to 1500 products</li>
-                                                <li>Custom Design</li>
-                                                <li>Content Managment System</li>
-                                                <li>Custom WP or PHP development</li>
-                                                <li>Icon Design</li>
-                                                <li>Stationary Design (BusinessCard,Letterhead & Envelope)</li>
-                                                <li>Invoice Design, Email Signature</li>
-                                                <li>Product Catalog Design</li>
-                                                <li>Unlimited Categories</li>
-                                                <li>Cutomer Log-in Area</li>
-                                                <li>Multi lingual</li>
-                                                <li>Multi-currency Support</li>
-                                                <li>Crypto Payment integration (Metamask)</li>
-                                                <li>Mobile responsive</li>
-                                                <li>Full shopping cart integration</li>
-                                                <li>Payment module integration</li>
-                                                <li>Easy product search</li>
-                                                <li>Product review</li>
-                                                <li>Facenook Pixel Installation</li>
-                                                <li>Live Chat integration</li>
-                                                <li>Google Map Integration</li>
-                                                <li>Featured product showcase</li>
-                                                <li>5 Promotional banner</li>
-                                                <li>Contact Form</li>
-                                                <li>Social Media Integration</li>
-                                                <li>Sign up Area (for Newsletter, Offers etc)</li>
-                                                <li>Dedicated Account Manager</li>
-                                                <li>Domain name (1 Year registeration)</li>
-                                                <li>Cloud Hosting (1 year)</li>
-                                                <li>SSL Certificate</li>
-                                                <li>up to 10 Email ID's</li>
-                                                <li>100% Ownership Rights</li>
-                                                <li>100% Satisfaction Guarantee</li>
-                                                <li>100% Unique Design Guarantee</li>
-                                            </ul>
+                                            <Scrollbars style={{ height: 120 }}>
+                                                <ul>
+                                                    <li>Up to 1500 products</li>
+                                                    <li>Custom Design</li>
+                                                    <li>Content Managment System</li>
+                                                    <li>Custom WP or PHP development</li>
+                                                    <li>Icon Design</li>
+                                                    <li>Stationary Design (BusinessCard,Letterhead & Envelope)</li>
+                                                    <li>Invoice Design, Email Signature</li>
+                                                    <li>Product Catalog Design</li>
+                                                    <li>Unlimited Categories</li>
+                                                    <li>Cutomer Log-in Area</li>
+                                                    <li>Multi lingual</li>
+                                                    <li>Multi-currency Support</li>
+                                                    <li>Crypto Payment integration (Metamask)</li>
+                                                    <li>Mobile responsive</li>
+                                                    <li>Full shopping cart integration</li>
+                                                    <li>Payment module integration</li>
+                                                    <li>Easy product search</li>
+                                                    <li>Product review</li>
+                                                    <li>Facenook Pixel Installation</li>
+                                                    <li>Live Chat integration</li>
+                                                    <li>Google Map Integration</li>
+                                                    <li>Featured product showcase</li>
+                                                    <li>5 Promotional banner</li>
+                                                    <li>Contact Form</li>
+                                                    <li>Social Media Integration</li>
+                                                    <li>Sign up Area (for Newsletter, Offers etc)</li>
+                                                    <li>Dedicated Account Manager</li>
+                                                    <li>Domain name (1 Year registeration)</li>
+                                                    <li>Cloud Hosting (1 year)</li>
+                                                    <li>SSL Certificate</li>
+                                                    <li>up to 10 Email ID's</li>
+                                                    <li>100% Ownership Rights</li>
+                                                    <li>100% Satisfaction Guarantee</li>
+                                                    <li>100% Unique Design Guarantee</li>
+                                                </ul>
+                                            </Scrollbars>
                                         </div>
                                     </div>
                                 </SwiperSlide>

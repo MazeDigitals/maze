@@ -26,7 +26,7 @@ const Ecommerce = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className={`${styles.main} blog-detail`}>
+            <main className={`${styles.main}`}>
                 <DynamicHeader />
 
                 <section className={styles.banner}>
@@ -181,8 +181,8 @@ const Ecommerce = () => {
                                 <p>Our pricing strategy is designed to meet the affordability of your pocket. Check out the most budget-friendly packages designed for each service.</p>
                             </Col>
                         </Row>
-                        <DynamicECommercePackages />
                     </Container>
+                    <DynamicECommercePackages />
                 </section>
 
 

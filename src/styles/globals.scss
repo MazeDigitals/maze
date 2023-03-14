@@ -398,7 +398,7 @@ p {
     color: #4A4A4A;
     font-size: 14px;
     line-height: 1.5;
-    min-height: 65px;
+    min-height: 85px;
     margin: 1.5rem 0 1rem;
   }
 
@@ -440,8 +440,8 @@ p {
     list-style: none;
     margin: 0;
     padding: 0;
-    height: 120px;
-    overflow-y: auto;
+    // height: 120px;
+    // overflow-y: auto;
 
     @media (max-width:767px) {
       padding-left: 1rem;
@@ -544,5 +544,62 @@ p {
 .portfolio-detail {
   .row+.row {
     margin-top: 4rem;
+  }
+}
+
+
+
+.form_section {
+  padding: 2.25rem 3rem;
+  border: 5px solid #0D2C48;
+  border-radius: 12px;
+  background: var(--white);
+  position: relative;
+
+  .close-btn {
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 1.125rem;
+  }
+
+  @media (max-width:767px) {
+    padding: 2rem 1.5rem 1rem;
+  }
+
+  .input_field {
+    margin-bottom: 2rem;
+
+    input {
+      border: 0;
+      min-height: 40px;
+      padding: 0.5rem;
+      color: #787878;
+      outline: none;
+      transition: 0.3s ease-in-out;
+      border-bottom: 1px solid #DCDCDC;
+
+      &:focus {
+        border-color: #0976DE;
+      }
+    }
+
+    textarea {
+      border: 0;
+      min-height: 89px;
+      padding: 0.5rem;
+      color: #787878;
+      outline: none;
+      transition: 0.3s ease-in-out;
+      border-bottom: 1px solid #DCDCDC;
+
+      &:focus {
+        border-color: #0976DE;
+      }
+
+    }
   }
 }

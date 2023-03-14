@@ -4,6 +4,11 @@
 
     .navlist {
         gap: 0 2rem;
+        align-items: center;
+
+        @media (max-width:1199.99px) {
+            gap: 0.5rem;
+        }
 
         @media (max-width:991.99px) {
             gap: 1.25rem;
@@ -17,15 +22,30 @@
                 font-family: 'Open Sans';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 16px;
+                font-size: 1rem;
                 line-height: 22px;
                 padding: 0;
+                gap: 0.75rem;
             }
 
             &:hover {
                 .mega_menu_wrap {
                     padding: 3rem 0;
                     height: auto;
+                }
+            }
+
+            button {
+                background: var(--white);
+                color: var(--primary);
+                border: 1px solid var(--white);
+                font-size: 0.875rem;
+                font-weight: 500;
+                outline: none;
+
+                &:hover {
+                    background: var(--primary);
+                    color: var(--white);
                 }
             }
         }

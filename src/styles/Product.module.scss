@@ -117,7 +117,8 @@
                 max-width: 55%;
                 top: 3rem;
                 text-align: center;
-                p{
+
+                p {
                     font-size: 12px;
                     font-weight: 400;
                 }
@@ -368,6 +369,17 @@
                 border-radius: 12px;
                 padding: 1.5rem 1.25rem;
                 text-align: center;
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                    background: var(--primary);
+                    img{
+                        filter: brightness(0) invert(1);
+                    }
+                    h3{
+                        color: var(--white);
+                    }
+                }
 
                 @media (max-width:767px) {
                     flex: 0 0 calc(50% - 0.5rem);

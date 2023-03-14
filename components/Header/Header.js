@@ -8,18 +8,24 @@ import {
     NavLink,
     Container,
     Row,
-    Col
+    Col,
+    Modal
 } from 'reactstrap';
 import styles from './Header.module.scss'
 import logo from '../../src/images/logo.svg'
-import { FaChevronDown } from 'react-icons/fa';
+import { FaChevronDown, FaPhoneAlt, } from 'react-icons/fa';
 import { isMobile } from 'react-device-detect';
 import Sidebar from 'components/Sidebar/Sidebar';
 import { motion, useScroll } from "framer-motion";
+import { BsXLg } from "react-icons/bs";
 
 function Header() {
     const { scrollY } = useScroll();
-    const [hidden, setHidden] = React.useState(false);
+    const [hidden, setHidden] = useState(false);
+    const [showEstimationModal, setShowEstimationModal] = useState(false);
+
+
+    const openEstimationModal = () => setShowEstimationModal(!showEstimationModal);
 
     if (isMobile) {
         return (
@@ -43,8 +49,8 @@ function Header() {
 
 
     const variants = {
-        visible: { opacity: 1, y: 0 },
-        hidden: { opacity: 0, y: -25 }
+        visible: { opacity: 1, y: 0, background: 'rgb(44, 113, 246)' },
+        hidden: { opacity: 0, y: -25, background: 'transparent' }
     };
 
 
@@ -218,9 +224,35 @@ function Header() {
                         </NavItem>
                         <NavItem className={styles.nav_item}><NavLink className={`${styles.nav_link}`} href="/blogs">Blogs</NavLink></NavItem>
                         <NavItem className={styles.nav_item}><NavLink className={`${styles.nav_link}`} href="/contact">Contact us</NavLink></NavItem>
+                        <NavItem className={styles.nav_item}><NavLink className={`${styles.nav_link} d-inline-flex align-items-center`} href='tel:+1 330-999-8028'><FaPhoneAlt /> +1 330-999-8028</NavLink></NavItem>
+                        <NavItem className={styles.nav_item}><button onClick={openEstimationModal} className={`btn-style m-0`}>ESTIMATE PROJECT</button></NavItem>
                     </Nav>
                 </Navbar>
             </Container>
+
+
+            <Modal isOpen={showEstimationModal} keyboard={false} backdrop={'static'} centered toggle={openEstimationModal}>
+                <div className={`form_section border-0 px-4 py-4`}>
+                    <span onClick={openEstimationModal} className='close-btn'><BsXLg /></span>
+                    <h3 className='fw-semibold mb-3'>Not sure about pricing?</h3>
+                    <p className='mb-4'>Let's get connected and level up your brand.</p>
+                    <div className={`input_field`}>
+                        <input type="text" className='w-100' placeholder='Name' />
+                    </div>
+                    <div className={`input_field`}>
+                        <input type="text" className='w-100' placeholder='Phone Number' />
+                    </div>
+                    <div className={`input_field`}>
+                        <input type="text" className='w-100' placeholder='Email' />
+                    </div>
+                    <div className={`input_field`}>
+                        <textarea type="text" className='w-100' placeholder='Message'>
+
+                        </textarea>
+                    </div>
+                    <button className='btn-style w-100'>Lets Connect</button>
+                </div>
+            </Modal>
         </motion.header>
     )
 }
