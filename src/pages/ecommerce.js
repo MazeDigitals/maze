@@ -39,7 +39,7 @@ const Ecommerce = () => {
                             </Col>
                             <Col className='col-lg-6 col-md-6 col-12'>
                                 <figure>
-                                    <img src="images/product-img.png" alt='' />
+                                    <img src="images/ecommerce-img.png" alt='' />
                                 </figure>
                             </Col>
                         </Row>
@@ -177,7 +177,7 @@ const Ecommerce = () => {
                     <Container>
                         <Row className='justify-content-center'>
                             <Col className='col-md-8 col-12 text-center mb-2'>
-                                <h2 className='fs-3'>PRICING</h2>
+                                <h2 className='fs-2'>PRICING</h2>
                                 <p>Our pricing strategy is designed to meet the affordability of your pocket. Check out the most budget-friendly packages designed for each service.</p>
                             </Col>
                         </Row>

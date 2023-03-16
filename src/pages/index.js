@@ -336,22 +336,24 @@ export default function Home() {
             <Row className='align-items-center'>
               <Col className='col-lg-7 col-md-6 col-12'>
                 <h3 className='text-white fw-semibold mb-3'>Custom Jumbo Pack</h3>
-                <p className='text-white fw-normal mb-4'>Laoreet ullamcorper sed purus risus enim quam tortor,<br className='d-none d-lg-block' /> faucibus. EnimLaoreet ullamcorper sed purus risus enim<br /> quam tortor, faucibus. </p>
+                <p className='text-white fw-normal mb-4'>At our company, we take pride in the expertise and dedication of our team of designers and developers. Our goal is to deliver a customized website with design and mobile application. Complete brand identity solution that not only meets but exceeds your expectations, all while keeping it affordable.</p>
                 <Row>
                   <Col className='col-lg-6 col-12'>
-                    <h4 className='fs-6 text-white fw-semibold mb-3'>Website Design</h4>
+                    <h4 className='fs-6 text-white fw-semibold mb-3'>Design and Development</h4>
                     <ul>
-                      <li>Lorem ipsum dolor sit amet, consectetur</li>
-                      <li>Lorem ipsum dolor sit amet, consectetur</li>
-                      <li>Lorem ipsum dolor sit amet, consectetur</li>
+                      <li>Get a complete custom IT solution for your brand</li>
+                      <li>Establish a strong presence on every platform for easy brand accessibility</li>
+                      <li>Dedicated and highly professional team solely focused on your brand's success</li>
+                      <li>Tailored and scalable solutions to meet your brand's unique needs and future growth goals.</li>
                     </ul>
                   </Col>
                   <Col className='col-lg-6 col-12'>
-                    <h4 className='fs-6 text-white fw-semibold mb-3'>Social Media Design</h4>
+                    <h4 className='fs-6 text-white fw-semibold mb-3'>SEO and Digital Marketing</h4>
                     <ul>
-                      <li>Lorem ipsum dolor sit amet, consectetur</li>
-                      <li>Lorem ipsum dolor sit amet, consectetur</li>
-                      <li>Lorem ipsum dolor sit amet, consectetur</li>
+                      <li>Boost your online visibility and brand awareness with our expert SEO strategies.</li>
+                      <li>Create engaging and relevant content to attract and retain your target audience.</li>
+                      <li>Maximize your ROI with data-driven digital marketing campaigns.</li>
+                      <li>Stay ahead of the competition with regular analysis, optimization, and reporting of your digital marketing efforts.</li>
                     </ul>
                   </Col>
                 </Row>

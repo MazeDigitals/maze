@@ -267,7 +267,7 @@ const WebDevelopment = () => {
                     <Container>
                         <Row className='justify-content-center'>
                             <Col className='col-md-8 col-12 text-center mb-5'>
-                                <h2 className='fs-3'>PRICING</h2>
+                                <h2 className='fs-2'>PRICING</h2>
                                 <p>Our pricing strategy is designed to meet the affordability of your pocket. Check out the most budget-friendly packages designed for each service.</p>
                             </Col>
                         </Row>

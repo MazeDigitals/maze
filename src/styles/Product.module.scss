@@ -370,14 +370,34 @@
                 padding: 1.5rem 1.25rem;
                 text-align: center;
                 transition: 0.3s ease-in-out;
+                position: relative;
+                overflow: hidden;
+
+                &::before {
+                    content: '';
+                    background: linear-gradient(141.9deg, #0D3962 -2.35%, #0976DE 106.86%);
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    transition: 0.3s ease-in-out;
+                    transform-origin: center;
+                    transform: scaleY(0);
+                }
 
                 &:hover {
-                    background: var(--primary);
-                    img{
+                    &::before {
+                        transform: scaleY(1);
+                    }
+
+                    img {
                         filter: brightness(0) invert(1);
                     }
-                    h3{
+
+                    h3 {
                         color: var(--white);
+                        position: relative;
                     }
                 }
 

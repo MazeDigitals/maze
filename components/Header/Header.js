@@ -169,7 +169,7 @@ function Header() {
                         </NavItem>
                         <NavItem className={styles.nav_item}><NavLink className={`${styles.nav_link}`} href="/portfolio">Portfolio</NavLink></NavItem>
                         <NavItem className={styles.nav_item}>
-                            <NavLink className={`${styles.nav_link}`} href="/">Pricing</NavLink>
+                            <NavLink className={`${styles.nav_link}`} href="/">Pricing <FaChevronDown /></NavLink>
                             <div className={`bg-white ${styles.mega_menu_wrap}`}>
                                 <Container>
                                     <Row className='align-items-start'>

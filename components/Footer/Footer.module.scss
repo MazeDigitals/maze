@@ -35,7 +35,7 @@
                 }
 
                 &:hover {
-                    background: var(--primary);
+                    color: var(--primary);
                 }
             }
 
@@ -60,6 +60,10 @@
 
                     svg {
                         margin-right: 0;
+                    }
+
+                    &:hover {
+                        color: var(--primary);
                     }
                 }
             }
@@ -136,6 +140,10 @@
 
                     svg {
                         margin-right: 0;
+                    }
+
+                    &:hover {
+                        color: var(--primary);
                     }
                 }
             }

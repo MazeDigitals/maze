@@ -15,7 +15,7 @@ function Pricing() {
                 <Container>
                     <Row className='justify-content-center'>
                         <Col className='col-lg-6 col-md-8 col-12 text-center mb-4'>
-                            <h4 className='fw-semibold mb-2'>PRICING</h4>
+                            <h4 className='fw-semibold fs-2 mb-2'>PRICING</h4>
                             <p className='fw-normal'>Our pricing strategy is designed to meet the affordability of your pocket. Check out the most budget-friendly packages designed for each service.</p>
                         </Col>
                     </Row>
