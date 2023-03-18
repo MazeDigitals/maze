@@ -4,39 +4,31 @@ import { Container, Nav, Navbar, NavbarBrand, NavItem, NavLink } from 'reactstra
 import styles from './Sidebar.module.scss';
 import logo from '../../src/images/logo-mob.svg'
 import { FaPhoneAlt } from 'react-icons/fa';
-import { motion, useScroll } from "framer-motion";
 
 
 const Sidebar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const { scrollY } = useScroll();
-    const [hidden, setHidden] = React.useState(false);
-
-
-    function update() {
-        if (scrollY?.current < scrollY?.prev) {
-            setHidden(false);
-        } else if (scrollY?.current > 100 && scrollY?.current > scrollY?.prev) {
-            setHidden(true);
-        }
-    }
-
+    // Sticky Navbar 
+    const [isSticky, setIsSticky] = useState(false);
 
     useEffect(() => {
-        return scrollY.onChange(() => update());
-    })
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
-
-    const variants = {
-        visible: { opacity: 1, y: 0 },
-        hidden: { opacity: 0, y: -25 }
+    const handleScroll = () => {
+        if (window.pageYOffset > 0) {
+            setIsSticky(true);
+        } else {
+            setIsSticky(false);
+        }
     };
-
+    // Sticky Navbar 
 
     return (
-        <motion.header className={`fixed-top bg-white ${styles.header}`}
-            variants={variants} animate={hidden ? "hidden" : "visible"}
-            transition={{ ease: [0.1, 0.25, 0.3, 1], duration: 0.6 }}>
+        <header className={`bg-white ${styles.header} ${isSticky ? 'isSticky' : ''}`}>
             <Container>
                 <Navbar>
                     <NavbarBrand href="/">
@@ -62,7 +54,7 @@ const Sidebar = () => {
                     <NavItem className={styles.nav_item}><NavLink className={styles.nav_link} href='/contact'>Contact us</NavLink></NavItem>
                 </Nav>
             </div>
-        </motion.header>
+        </header>
     );
 }
 

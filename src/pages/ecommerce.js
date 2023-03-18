@@ -173,7 +173,7 @@ const Ecommerce = () => {
                     </Container>
                 </section>
 
-                <section className={`${styles.pricing_section}`}>
+                <section className={`${styles.pricing_section}`} id="pricing">
                     <Container>
                         <Row className='justify-content-center'>
                             <Col className='col-md-8 col-12 text-center mb-2'>

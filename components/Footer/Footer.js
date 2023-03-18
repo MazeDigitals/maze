@@ -14,6 +14,7 @@ const Footer = () => {
                 <Container>
                     <Row>
                         <Col className='col-12'>
+                            <a href='/' className='d-inline-block mb-4'><Image src='/images/footer-logo.svg' width={116} height={32} alt="logo" /></a>
                             <p className='fs-8 text-white mb-3'>With Maze Digital, a plus point is never worrying about how much we will charge to develop your desired website, e-commerce platform, logo, UI/UX, and branding strategies. It is an easy-to-follow business building experience where our team will give regular feedback, suggestions, and updates regarding the process.</p>
                             <div className={styles.footer_menu}>
                                 <div className={styles.menu_wrap}>

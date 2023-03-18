@@ -30,7 +30,7 @@ const WebDevelopment = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className={`${styles.main} blog-detail`}>
+            <main className={`${styles.main}`}>
                 <DynamicHeader />
 
                 <section className={styles.banner}>
@@ -263,7 +263,7 @@ const WebDevelopment = () => {
                 </section>
 
 
-                <section className={`${styles.pricing_section}`}>
+                <section className={`${styles.pricing_section}`} id="pricing">
                     <Container>
                         <Row className='justify-content-center'>
                             <Col className='col-md-8 col-12 text-center mb-5'>

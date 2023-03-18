@@ -11,7 +11,7 @@ function Pricing() {
     return (
         <>
             {/* PRICING SECTION */}
-            <section className={`${styles.pricing_section}`}>
+            <section className={`${styles.pricing_section}`} id="pricing">
                 <Container>
                     <Row className='justify-content-center'>
                         <Col className='col-lg-6 col-md-8 col-12 text-center mb-4'>

@@ -47,6 +47,30 @@ body {
   }
 }
 
+header {
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  &.isSticky {
+    backdrop-filter: blur(10px);
+    background: rgba(9, 119, 222, 0.8);
+    animation: slideDown 0.5s ease-out;
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-100%);
+      }
+
+      to {
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
 a {
   transition: 0.3s ease-in-out;
   text-decoration: none;
@@ -362,6 +386,7 @@ p {
   border-radius: 12px;
   position: relative;
   overflow: hidden;
+  margin-bottom: 1.5rem;
 
   &::before {
     content: '';

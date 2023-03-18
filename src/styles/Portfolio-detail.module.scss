@@ -1,4 +1,11 @@
 .main {
+    &.portfolioDetail {
+        header {
+            backdrop-filter: blur(10px);
+            background: rgba(9, 119, 222, 0.8);
+        }
+    }
+
     .banner {
         padding-top: 8rem;
 

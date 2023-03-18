@@ -27,7 +27,7 @@ const ProductDesign = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className={`${styles.main} blog-detail`}>
+            <main className={`${styles.main}`}>
                 <DynamicHeader />
 
                 <section className={styles.banner}>
@@ -311,7 +311,7 @@ const ProductDesign = () => {
                 </section>
 
 
-                <section className={`${styles.pricing_section} pt-0`}>
+                <section className={`${styles.pricing_section} pt-0`} id="pricing">
                     <Container>
                         <Row className='justify-content-center'>
                             <Col className='col-md-8 col-12 text-center mb-2'>
@@ -334,10 +334,10 @@ const ProductDesign = () => {
                             <Col className='col-md-5 col-12'>
                                 <h4 className='fs-6 text-white fw-semibold mb-3'>Package includes</h4>
                                 <ul>
-                                    <li>Lorem ipsum dolor sit amet, consectetur sit amet, consectetur </li>
-                                    <li>Lorem ipsum dolor sit amet, consectetur elo</li>
-                                    <li>Lorem ipsum dolor sit amet, consectetur sit amet, consectetur</li>
-                                    <li>Lorem ipsum dolor sit amet, consectetur sit amet, consectetur</li>
+                                    <li>Customized and intuitive designs that enhance user experience</li>
+                                    <li>Streamlined and efficient user interfaces that optimize user engagement</li>
+                                    <li>Collaborative design process to ensure your brand's unique vision is achieved</li>
+                                    <li>Continuous testing and improvement to guarantee maximum user satisfaction.</li>
                                 </ul>
                             </Col>
                         </Row>

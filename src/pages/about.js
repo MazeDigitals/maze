@@ -213,7 +213,7 @@ const About = () => {
                 </section>
 
 
-                <section className={`${styles.work_section}`}>
+                <section className={`${styles.work_section}`} id="work_section">
                     <Container>
                         <Row className='justify-content-center'>
                             <Col className='col-md-8 col-12 text-center mb-5'>

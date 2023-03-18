@@ -16,16 +16,30 @@ import logo from '../../src/images/logo.svg'
 import { FaChevronDown, FaPhoneAlt, } from 'react-icons/fa';
 import { isMobile } from 'react-device-detect';
 import Sidebar from 'components/Sidebar/Sidebar';
-import { motion, useScroll } from "framer-motion";
 import { BsXLg } from "react-icons/bs";
 
 function Header() {
-    const { scrollY } = useScroll();
-    const [hidden, setHidden] = useState(false);
     const [showEstimationModal, setShowEstimationModal] = useState(false);
-
-
     const openEstimationModal = () => setShowEstimationModal(!showEstimationModal);
+
+    // Sticky Navbar 
+    const [isSticky, setIsSticky] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+    const handleScroll = () => {
+        if (window.pageYOffset > 0) {
+            setIsSticky(true);
+        } else {
+            setIsSticky(false);
+        }
+    };
+    // Sticky Navbar 
 
     if (isMobile) {
         return (
@@ -33,33 +47,8 @@ function Header() {
         )
     }
 
-
-    function update() {
-        if (scrollY?.current < scrollY?.prev) {
-            setHidden(false);
-        } else if (scrollY?.current > 100 && scrollY?.current > scrollY?.prev) {
-            setHidden(true);
-        }
-    }
-
-
-    useEffect(() => {
-        return scrollY.onChange(() => update());
-    })
-
-
-    const variants = {
-        visible: { opacity: 1, y: 0, background: 'rgb(44, 113, 246)' },
-        hidden: { opacity: 0, y: -25, background: 'transparent' }
-    };
-
-
-
     return (
-        <motion.header
-            className={`fixed-top ${styles.header}`}
-            variants={variants} animate={hidden ? "hidden" : "visible"}
-            transition={{ ease: [0.1, 0.25, 0.3, 1], duration: 0.6 }}>
+        <header className={`${styles.header} ${isSticky ? 'isSticky' : ''}`}>
             <Container>
                 <Navbar>
                     <NavbarBrand href="/">
@@ -82,7 +71,7 @@ function Header() {
                                                     <a href='#'>Our Mission <span>Maze Digital's mission is to help you successfully win and penetrate the market.</span></a>
                                                 </li>
                                                 <li>
-                                                    <a href='#'>How we work <span>With Maze Digital, you get the most affordable, budget-friendly services.</span></a>
+                                                    <a href='/about#work_section'>How we work <span>With Maze Digital, you get the most affordable, budget-friendly services.</span></a>
                                                 </li>
                                                 <li>
                                                     <a href='#'>Why Choose Us <span>Our company's mission is to provide excellent services at affordable rates.</span></a>
@@ -169,7 +158,7 @@ function Header() {
                         </NavItem>
                         <NavItem className={styles.nav_item}><NavLink className={`${styles.nav_link}`} href="/portfolio">Portfolio</NavLink></NavItem>
                         <NavItem className={styles.nav_item}>
-                            <NavLink className={`${styles.nav_link}`} href="/">Pricing <FaChevronDown /></NavLink>
+                            <NavLink className={`${styles.nav_link}`} href="/product-design#pricing">Pricing <FaChevronDown /></NavLink>
                             <div className={`bg-white ${styles.mega_menu_wrap}`}>
                                 <Container>
                                     <Row className='align-items-start'>
@@ -253,7 +242,7 @@ function Header() {
                     <button className='btn-style w-100'>Lets Connect</button>
                 </div>
             </Modal>
-        </motion.header>
+        </header>
     )
 }
 
