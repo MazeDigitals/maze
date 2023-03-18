@@ -280,30 +280,30 @@
         }
     }
 
-    .web_process {
-        display: flex;
-        align-items: flex-start;
-        gap: 1rem;
+    // .web_process {
+    //     display: flex;
+    //     align-items: flex-start;
+    //     gap: 1rem;
 
-        h2 {
-            font-weight: 700;
-            font-size: 4rem;
-            line-height: 1;
-            color: #F0F0F0;
+    //     h2 {
+    //         font-weight: 700;
+    //         font-size: 4rem;
+    //         line-height: 1;
+    //         color: #F0F0F0;
 
-            @media (max-width:767.98px) {
-                min-width: 85px;
-            }
-        }
+    //         @media (max-width:767.98px) {
+    //             min-width: 85px;
+    //         }
+    //     }
 
-        .content {
-            flex: 1;
+    //     .content {
+    //         flex: 1;
 
-            h3 {
-                color: #2D2D2D;
-            }
-        }
-    }
+    //         h3 {
+    //             color: #2D2D2D;
+    //         }
+    //     }
+    // }
 
     // ecommerce_services
     .ecommerce_services {

@@ -184,43 +184,29 @@ const WebDevelopment = () => {
                                 <h2 className='fw-semibold mb-3'>Take advantage of our proven <span className='text-primary'>Web development process</span></h2>
                                 <p className=''>Amet minim mollit   dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                             </Col>
-                        </Row>
-                        <Row>
-                            <Col className='col-lg-3 col-md-6 col-12'>
-                                <div className={styles.web_process}>
-                                    <h2>01</h2>
-                                    <div className={styles.content}>
-                                        <h3 className='fs-4'>Discuss your ideas</h3>
-                                        <p className='fs-7'>Get in touch with our experts to understand your technology needs, project goals & team dynamics.</p>
-                                    </div>
-                                </div>
-                            </Col>
-                            <Col className='col-lg-3 col-md-6 col-12'>
-                                <div className={styles.web_process}>
-                                    <h2>02</h2>
-                                    <div className={styles.content}>
-                                        <h3 className='fs-4'>Choose a Technology</h3>
-                                        <p className='fs-7'>Get in touch with our experts to understand your technology needs, project goals & team dynamics.</p>
-                                    </div>
-                                </div>
-                            </Col>
-                            <Col className='col-lg-3 col-md-6 col-12'>
-                                <div className={styles.web_process}>
-                                    <h2>03</h2>
-                                    <div className={styles.content}>
-                                        <h3 className='fs-4'>Get Started with Design</h3>
-                                        <p className='fs-7'>Get in touch with our experts to understand your technology needs, project goals & team dynamics.</p>
-                                    </div>
-                                </div>
-                            </Col>
-                            <Col className='col-lg-3 col-md-6 col-12'>
-                                <div className={styles.web_process}>
-                                    <h2>04</h2>
-                                    <div className={styles.content}>
-                                        <h3 className='fs-4'>Development Phase</h3>
-                                        <p className='fs-7'>Get in touch with our experts to understand your technology needs, project goals & team dynamics.</p>
-                                    </div>
-                                </div>
+                            <Col className='col-12'>
+                                <ul>
+                                    <li className='text-center'>
+                                        <span className={`${styles.dot}`}></span>
+                                        <h3 className='fs-6 fw-bold mb-3'>Discuss your ideas</h3>
+                                        <p className='fs-7 fw-normal'>Get in touch with our experts to understand your technology needs, project goals & team dynamics.</p>
+                                    </li>
+                                    <li className='text-center'>
+                                        <span className={`${styles.dot}`}></span>
+                                        <h3 className='fs-6 fw-bold mb-3'>Choose a Technology</h3>
+                                        <p className='fs-7 fw-normal'>Get in touch with our experts to understand your technology needs, project goals & team dynamics.</p>
+                                    </li>
+                                    <li className='text-center'>
+                                        <span className={`${styles.dot}`}></span>
+                                        <h3 className='fs-6 fw-bold mb-3'>Get Started with Design</h3>
+                                        <p className='fs-7 fw-normal'>Get in touch with our experts to understand your technology needs, project goals & team dynamics.</p>
+                                    </li>
+                                    <li className='text-center'>
+                                        <span className={`${styles.dot}`}></span>
+                                        <h3 className='fs-6 fw-bold mb-3'>Development Phase</h3>
+                                        <p className='fs-7 fw-normal'>Get in touch with our experts to understand your technology needs, project goals & team dynamics.</p>
+                                    </li>
+                                </ul>
                             </Col>
                         </Row>
                     </Container>
@@ -275,38 +261,22 @@ const WebDevelopment = () => {
                     <DynamicWebPackages />
                 </section>
 
-                <section className={`${styles.custom_pack}`}>
+                <section className={`${styles.custom_pack} ${styles.product}`}>
                     <Container>
-                        <Row className='justify-content-center align-items-center'>
-                            <Col className='col-md-10 col-12 text-center mb-5'>
-                                <h2 className='fs-1 text-white fw-semibold'>Custom Jumbo Pack</h2>
+                        <Row className='justify-content-between align-items-center'>
+                            <Col className='col-md-6 col-12'>
+                                <h2 className='fs-1 text-white fw-semibold mb-3'>Prices Start from $390 ONLY!</h2>
+                                <p className='fs-6 text-white'>All plans include unlimited requests, unlimited revisions, and source files.</p>
+                                <a href='/' className='btn-style mt-4'>Get a Quote</a>
                             </Col>
-                            <Col className='col-md-3 col-12'>
-                                <h4 className='fs-6 text-white fw-semibold mb-3'>Website Design</h4>
+                            <Col className='col-md-5 col-12'>
+                                <h4 className='fs-6 text-white fw-semibold mb-3'>Package includes</h4>
                                 <ul>
-                                    <li>Lorem ipsum dolor sit amet, consectetur</li>
-                                    <li>Lorem ipsum dolor sit amet, consectetur</li>
-                                    <li>Lorem ipsum dolor sit amet, consectetur</li>
+                                    <li>Customized website development tailored to your unique business needs.</li>
+                                    <li>Intuitive and user-friendly interface for seamless user experience.</li>
+                                    <li>Scalable solutions to accommodate your business's future growth goals.</li>
+                                    <li>Quality assurance and testing to ensure a flawless website launch.</li>
                                 </ul>
-                            </Col>
-                            <Col className='col-md-3 col-12'>
-                                <h4 className='fs-6 text-white fw-semibold mb-3'>Mobile App Design</h4>
-                                <ul>
-                                    <li>Lorem ipsum dolor sit amet, consectetur</li>
-                                    <li>Lorem ipsum dolor sit amet, consectetur</li>
-                                    <li>Lorem ipsum dolor sit amet, consectetur</li>
-                                </ul>
-                            </Col>
-                            <Col className='col-md-3 col-12'>
-                                <h4 className='fs-6 text-white fw-semibold mb-3'>Mobile App Design</h4>
-                                <ul>
-                                    <li>Lorem ipsum dolor sit amet, consectetur</li>
-                                    <li>Lorem ipsum dolor sit amet, consectetur</li>
-                                    <li>Lorem ipsum dolor sit amet, consectetur</li>
-                                </ul>
-                            </Col>
-                            <Col className='col-12 text-center'>
-                                <a href='/' className='btn-style mt-5'>Get a Quote</a>
                             </Col>
                         </Row>
                     </Container>

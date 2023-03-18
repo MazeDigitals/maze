@@ -186,38 +186,22 @@ const Ecommerce = () => {
                 </section>
 
 
-                <section className={`${styles.custom_pack}`}>
+                <section className={`${styles.custom_pack} ${styles.product}`}>
                     <Container>
-                        <Row className='justify-content-center align-items-center'>
-                            <Col className='col-md-10 col-12 text-center mb-5'>
-                                <h2 className='fs-1 text-white fw-semibold'>Custom Jumbo Pack</h2>
+                        <Row className='justify-content-between align-items-center'>
+                            <Col className='col-md-6 col-12'>
+                                <h2 className='fs-1 text-white fw-semibold mb-3'>Prices Start from $950 ONLY!</h2>
+                                <p className='fs-6 text-white'>All plans include unlimited requests, unlimited revisions, and source files.</p>
+                                <a href='/' className='btn-style mt-4'>Get a Quote</a>
                             </Col>
-                            <Col className='col-md-3 col-12'>
-                                <h4 className='fs-6 text-white fw-semibold mb-3'>Website Design</h4>
+                            <Col className='col-md-5 col-12'>
+                                <h4 className='fs-6 text-white fw-semibold mb-3'>Package includes</h4>
                                 <ul>
-                                    <li>Lorem ipsum dolor sit amet, consectetur</li>
-                                    <li>Lorem ipsum dolor sit amet, consectetur</li>
-                                    <li>Lorem ipsum dolor sit amet, consectetur</li>
+                                    <li>Develop an e-commerce platform that's tailored to your brand's unique needs and goals.</li>
+                                    <li>Create a seamless and intuitive user experience that encourages conversions and boosts sales.</li>
+                                    <li>Implement effective e-commerce marketing strategies to attract and retain customers, including email marketing, social media advertising, and more.</li>
+                                    <li>Integrate powerful e-commerce features and functionality, such as secure payment gateways, inventory management systems, and shipping and tax calculators.</li>
                                 </ul>
-                            </Col>
-                            <Col className='col-md-3 col-12'>
-                                <h4 className='fs-6 text-white fw-semibold mb-3'>Mobile App Design</h4>
-                                <ul>
-                                    <li>Lorem ipsum dolor sit amet, consectetur</li>
-                                    <li>Lorem ipsum dolor sit amet, consectetur</li>
-                                    <li>Lorem ipsum dolor sit amet, consectetur</li>
-                                </ul>
-                            </Col>
-                            <Col className='col-md-3 col-12'>
-                                <h4 className='fs-6 text-white fw-semibold mb-3'>Mobile App Design</h4>
-                                <ul>
-                                    <li>Lorem ipsum dolor sit amet, consectetur</li>
-                                    <li>Lorem ipsum dolor sit amet, consectetur</li>
-                                    <li>Lorem ipsum dolor sit amet, consectetur</li>
-                                </ul>
-                            </Col>
-                            <Col className='col-12 text-center'>
-                                <a href='/' className='btn-style mt-5'>Get a Quote</a>
                             </Col>
                         </Row>
                     </Container>
