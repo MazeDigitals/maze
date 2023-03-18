@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import styles from '@/styles/About.module.scss'
-import { FaStar } from 'react-icons/fa'
+import { FaChevronLeft, FaChevronRight, FaStar } from 'react-icons/fa'
 import { Col, Container, Row } from 'reactstrap'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
@@ -48,6 +48,10 @@ const Testimonial = () => {
                     </Col>
 
                     <Col className='col-md-12'>
+                        <div className="slider-btn-wrap">
+                            <button ref={prevElRef}><FaChevronLeft /></button>
+                            <button ref={nextElRef}><FaChevronRight /></button>
+                        </div>
                         <Swiper
                             loop={true}
                             navigation={{

@@ -531,16 +531,17 @@ p {
 }
 
 .slider-btn-wrap {
-  position: absolute;
+  // position: absolute;
   left: 0;
   right: 0;
+  gap: 1rem;
   padding: 0 1rem;
-  top: 50%;
-  transform: translateY(-50%);
+  // top: 50%;
+  // transform: translateY(-50%);
   z-index: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 
   button {
     width: 56px;
@@ -549,7 +550,15 @@ p {
     place-items: center;
     border-radius: 50%;
     border: 0;
+    font-size: 1rem;
+    color: var(--primary);
+    transition: 0.3s ease-in-out;
     background: rgba(234, 239, 243, 0.69);
+
+    &:hover {
+      background: var(--primary);
+      color: var(--white);
+    }
   }
 
   @media (max-width:767px) {

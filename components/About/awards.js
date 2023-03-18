@@ -2,13 +2,21 @@ import React from 'react'
 import { Col, Container, Row } from 'reactstrap'
 import styles from './awards.module.scss'
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+import { Pagination, Navigation } from "swiper";
+// import { Swiper, SwiperSlide } from "swiper/react";
+import useSwiperRef from 'components/Home/useSwiperRef';
+
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 
 const Awards = () => {
+    const [nextEl, nextElRef] = useSwiperRef();
+    const [prevEl, prevElRef] = useSwiperRef();
 
     const responsive = {
         768: {
@@ -26,14 +34,21 @@ const Awards = () => {
                 <Row>
                     <Col className='col-md-12'>
                         <h2 className='mb-5 text-center'>Awards & Recognition</h2>
-
+                        <div className="slider-btn-wrap">
+                            <button ref={prevElRef}><FaChevronLeft /></button>
+                            <button ref={nextElRef}><FaChevronRight /></button>
+                        </div>
                         <Swiper
                             loop={true}
                             slidesPerView={1}
                             spaceBetween={16}
                             pagination={true}
+                            navigation={{
+                                prevEl,
+                                nextEl,
+                            }}
                             breakpoints={responsive}
-                            modules={[Pagination]}
+                            modules={[Pagination, Navigation]}
                             className="mySwiper py-4 px-3"
                         >
                             <SwiperSlide>
