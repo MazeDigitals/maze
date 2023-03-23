@@ -1,6 +1,11 @@
 .main {
+    header {
+        backdrop-filter: blur(10px);
+        background: rgba(9, 119, 222, 0.9);
+    }
+
     .contact_info {
-        padding: 6rem 0;
+        padding: 8rem 0 6rem;
         min-height: 100vh;
         display: flex;
         align-items: center;

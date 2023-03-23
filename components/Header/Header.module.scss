@@ -30,7 +30,7 @@
             &:hover {
                 .mega_menu_wrap {
                     padding: 3rem 0;
-                    height: auto;
+                    transform: scaleY(1);
                 }
             }
 
@@ -54,13 +54,13 @@
         position: fixed;
         left: 0;
         right: 0;
-        top: 90px;
+        top: 70px;
         z-index: 1;
-        height: 0;
+        transform-origin: top;
+        transform: scaleY(0);
         overflow: hidden;
-        transition: 0.3s ease-in-out;
+        transition: transform, 0.3s ease-in-out;
         display: flex;
-        align-items: center;
         justify-content: center;
 
         &::before {
