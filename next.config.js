@@ -2,9 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   siteUrl: `${process.env.APP_URL}`,
-  // experimental: {
-  //   appDir: true,
-  // },
+  experimental: {
+    outputStandalone: true
+  }
 }
 
 module.exports = nextConfig
