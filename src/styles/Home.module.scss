@@ -366,6 +366,7 @@
           content: '';
           width: 18px;
           height: 18px;
+          flex-shrink: 0;
           display: inline-block;
           background: url(../../public/images/check.svg) center/contain no-repeat;
         }
