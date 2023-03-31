@@ -222,7 +222,19 @@
   }
 
   .achivement_section {
-    background: url(../../public/images/achivement-bg.svg) center/cover no-repeat;
+    background: url(../../public/images/achievment_bg.png) center/cover no-repeat;
+    position: relative;
+    z-index: 1;
+
+    >.bg_img {
+      position: absolute;
+      left: 0;
+      right: 0;
+      display: none;
+      bottom: 0;
+      top: 0;
+      z-index: -1;
+    }
 
     .card {
       background: var(--white);
@@ -254,6 +266,7 @@
     h4 {
       color: #2D2D2D;
     }
+
     .tab_cont {
       gap: 1.5rem;
       margin-bottom: 2rem;

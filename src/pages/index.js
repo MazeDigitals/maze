@@ -287,6 +287,7 @@ export default function Home() {
 
         {/* Achivements Section */}
         <section className={`${styles.achivement_section}`}>
+          <img src='images/achievment_bg.png' alt='bg' className={styles.bg_img} />
           <Container>
             <Row className='justify-content-center'>
               <Col className='col-lg-4 col-md-8 col-12 text-center mb-4'>

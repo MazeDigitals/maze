@@ -125,61 +125,58 @@ const ServiceMegaMenu = () => {
         </div>
     );
 }
-const PricingMegaMenu = () => {
-    return (
-        <div className={`bg-white ${styles.mega_menu_wrap}`}>
-            <Container>
-                <Row className='align-items-start'>
-                    <Col className="col-md-3">
-                        <h3 className='fs-5 fw-semibold'>Our Services</h3>
-                        <p className='fs-7 fw-normal'>Leveraging your business's potential, providing high-end designs and development services, resulting in quality outcomes.</p>
-                    </Col>
-                    <Col className={`col-md-6 ${styles.border_left}`}>
-                        <h3 className='fs-6 fw-semibold'>Services</h3>
-                        <ul>
-                            <li>
-                                <a href='/product-design#pricing'>UI/UX Design <span>With a great user interface and user experience, we ensure to define your business's motive just as you want it to be.</span></a>
-                            </li>
-                            {/* <li>
-                            <a href='/product-design'>Design Services <span>We provide logo designing services, keeping specific business niches in mind.</span></a>
-                        </li> */}
-                            <li>
-                                <a href='/web-development#pricing'>Web Development <span>The world is moving towards believing that websites can do wonders in digitally growing a business's potential.</span></a>
-                            </li>
-                            <li>
-                                <a href='/ecommerce#pricing'>Ecommerce <span>The E-Commerce market is significantly growing at a much faster pace than ever. </span></a>
-                            </li>
-                        </ul>
+// const PricingMegaMenu = () => {
+//     return (
+//         <div className={`bg-white ${styles.mega_menu_wrap}`}>
+//             <Container>
+//                 <Row className='align-items-start'>
+//                     <Col className="col-md-3">
+//                         <h3 className='fs-5 fw-semibold'>Our Services</h3>
+//                         <p className='fs-7 fw-normal'>Leveraging your business's potential, providing high-end designs and development services, resulting in quality outcomes.</p>
+//                     </Col>
+//                     <Col className={`col-md-6 ${styles.border_left}`}>
+//                         <h3 className='fs-6 fw-semibold'>Services</h3>
+//                         <ul>
+//                             <li>
+//                                 <a href='/product-design#pricing'>UI/UX Design <span>With a great user interface and user experience, we ensure to define your business's motive just as you want it to be.</span></a>
+//                             </li>
+//                             <li>
+//                                 <a href='/web-development#pricing'>Web Development <span>The world is moving towards believing that websites can do wonders in digitally growing a business's potential.</span></a>
+//                             </li>
+//                             <li>
+//                                 <a href='/ecommerce#pricing'>Ecommerce <span>The E-Commerce market is significantly growing at a much faster pace than ever. </span></a>
+//                             </li>
+//                         </ul>
 
-                    </Col>
-                    <Col className="col-md-3">
-                        <h3 className='fs-6 fw-semibold'>How we work</h3>
-                        <ul className={`flex-column ${styles.column_list}`}>
-                            <li className='w-100'>
-                                <a>Project Kickoff <span>We first kick off the project by meeting with our client</span></a>
-                            </li>
-                            <li className='w-100'>
-                                <a>Ideation & Evaluation <span>The next step is to generate ideas for a solution to our client's problems. </span></a>
-                            </li>
-                            <li className='w-100'>
-                                <a>Design <span>The third approachable step is to design a project plan by outlining the stages.</span></a>
-                            </li>
-                            <li className='w-100'>
-                                <a>Development <span>The process involves allocating resources to develop the product from the initial concept to going live. </span></a>
-                            </li>
-                            <li className='w-100'>
-                                <a>Implementation <span>We then implement the project in the live environment to see for any shortcomings</span></a>
-                            </li>
-                            <li className='w-100'>
-                                <a>Quality Assurance <span>It is extremely important to monitor the project’s performance to check whether it’s functioning well. </span></a>
-                            </li>
-                        </ul>
-                    </Col>
-                </Row>
-            </Container>
-        </div>
-    );
-}
+//                     </Col>
+//                     <Col className="col-md-3">
+//                         <h3 className='fs-6 fw-semibold'>How we work</h3>
+//                         <ul className={`flex-column ${styles.column_list}`}>
+//                             <li className='w-100'>
+//                                 <a>Project Kickoff <span>We first kick off the project by meeting with our client</span></a>
+//                             </li>
+//                             <li className='w-100'>
+//                                 <a>Ideation & Evaluation <span>The next step is to generate ideas for a solution to our client's problems. </span></a>
+//                             </li>
+//                             <li className='w-100'>
+//                                 <a>Design <span>The third approachable step is to design a project plan by outlining the stages.</span></a>
+//                             </li>
+//                             <li className='w-100'>
+//                                 <a>Development <span>The process involves allocating resources to develop the product from the initial concept to going live. </span></a>
+//                             </li>
+//                             <li className='w-100'>
+//                                 <a>Implementation <span>We then implement the project in the live environment to see for any shortcomings</span></a>
+//                             </li>
+//                             <li className='w-100'>
+//                                 <a>Quality Assurance <span>It is extremely important to monitor the project’s performance to check whether it’s functioning well. </span></a>
+//                             </li>
+//                         </ul>
+//                     </Col>
+//                 </Row>
+//             </Container>
+//         </div>
+//     );
+// }
 
 function Header() {
     const [showEstimationModal, setShowEstimationModal] = useState(false);
@@ -228,8 +225,8 @@ function Header() {
                         </NavItem>
                         <NavItem className={styles.nav_item}><NavLink className={`${styles.nav_link}`} href="/portfolio">Portfolio</NavLink></NavItem>
                         <NavItem className={styles.nav_item}>
-                            <NavLink className={`${styles.nav_link}`} href="/product-design#pricing">Pricing <FaChevronDown /></NavLink>
-                            <PricingMegaMenu />
+                            <NavLink className={`${styles.nav_link}`} href="#pricing">Pricing</NavLink>
+                            {/* <PricingMegaMenu /> */}
                         </NavItem>
                         <NavItem className={styles.nav_item}><NavLink className={`${styles.nav_link}`} href="/blogs">Blogs</NavLink></NavItem>
                         <NavItem className={styles.nav_item}><NavLink className={`${styles.nav_link}`} href="/contact">Contact us</NavLink></NavItem>
