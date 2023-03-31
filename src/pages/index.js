@@ -239,7 +239,11 @@ export default function Home() {
               <Col className='col-lg-10 col-12'>
                 <Row className='align-items-center'>
                   <Col className='col-md-6 col-12'>
-                    <h2><span className='d-block'>LOREM IPSUM</span> Feature-Rich <br />Ecommerce Websites</h2>
+                    <h2>
+                      {/* <span className='d-block'>LOREM IPSUM</span>  */}
+                      Web Development 
+                      {/* <br />Ecommerce Websites */}
+                      </h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
                     <button className='btn-style'>VIEW CASE STUDY</button>
                   </Col>
