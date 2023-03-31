@@ -240,12 +240,12 @@ export default function Home() {
                 <Row className='align-items-center'>
                   <Col className='col-md-6 col-12'>
                     <h2>
-                      {/* <span className='d-block'>LOREM IPSUM</span>  */}
-                      Web Development 
+                      <span className='d-block'>Web Solutions</span> 
+                      Increase Online Visibility
                       {/* <br />Ecommerce Websites */}
                       </h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
-                    <button className='btn-style'>VIEW CASE STUDY</button>
+                    <p>We provide website design and development services that are optimized for search engines and provide a great user experience. This means your website is more likely to rank highly in search engine results pages, increasing your online visibility and driving more traffic to your website. </p>
+                    {/* <button className='btn-style'>VIEW CASE STUDY</button> */}
                   </Col>
                   <Col className='col-md-6 col-12'>
                     <MotionWrapper>
