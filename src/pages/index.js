@@ -100,8 +100,8 @@ export default function Home() {
                   </Row> */}
                   <Row>
                     <Col className='col-md-12'>
-                      <h3 className='fw-semibold text-center'>Our mission</h3>
-                      <p className='text-center'>Our focus on user satisfaction and simplicity ensures that your product succeeds with quality code and skilled professionals, minimizing risk.</p>
+                      <h3 className='fw-semibold text-center'>Need a website that stands out in a crowded market? We can help. Contact us for an affordable and customized solution.</h3>
+                      {/* <p className='text-center'>Need a website that stands out in a crowded market? We can help. Contact us for an affordable and customized solution.</p> */}
                     </Col>
                   </Row>
                 </div>
