@@ -100,7 +100,7 @@ export default function Home() {
                   </Row> */}
                   <Row>
                     <Col className='col-md-12'>
-                      <h3 className='fw-semibold text-center'>Need a website that stands out in a crowded market?  Contact us for an affordable and customized solution.</h3>
+                      <h3 className='fw-semibold text-center'>Need a website that stands out in a crowded market? <br /> Contact us for an affordable and customized solution.</h3>
                       {/* <p className='text-center'>Need a website that stands out in a crowded market? We can help. Contact us for an affordable and customized solution.</p> */}
                     </Col>
                   </Row>
