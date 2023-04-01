@@ -104,19 +104,19 @@ const ServiceMegaMenu = () => {
                             <a>Project Kickoff <span>We first kick off the project by meeting with our client</span></a>
                         </li> */}
                             <li className='w-100'>
-                                <a>Discovery <span>The next step is to generate ideas for a solution to our client's problems. </span></a>
+                                <a>Discovery <span>Explore. Research. Understand. </span></a>
                             </li>
                             <li className='w-100'>
-                                <a>Design <span>The third approachable step is to design a project plan by outlining the stages.</span></a>
+                                <a>Design <span>Conceptualize. Create. Refine..</span></a>
                             </li>
                             <li className='w-100'>
-                                <a>Development <span>The process involves allocating resources to develop the product from the initial concept to going live. </span></a>
+                                <a>Development <span>Build. Test. Refine. </span></a>
                             </li>
                             <li className='w-100'>
-                                <a>Implementation <span>We then implement the project in the live environment to see for any shortcomings</span></a>
+                                <a>Implementation <span>Launch. Monitor. Optimize.</span></a>
                             </li>
                             <li className='w-100'>
-                                <a>Quality Assurance <span>It is extremely important to monitor the project’s performance to check whether it’s functioning well. </span></a>
+                                <a>Quality Assurance <span>Review. Test. Improve. </span></a>
                             </li>
                         </ul>
                     </Col>
