@@ -257,9 +257,11 @@ export default function Home() {
                 </Row>
                 <Row className='align-items-center flex-row-reverse'>
                   <Col className='col-md-6 col-12'>
-                    <h2><span className='d-block'>LOREM IPSUM</span> Feature-Rich <br />Ecommerce Websites</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
-                    <button className='btn-style'>VIEW CASE STUDY</button>
+                    <h2><span className='d-block'>Tailored Solutions</span> Customizable Solutions 
+                    {/* <br />Ecommerce Websites */}
+                    </h2>
+                    <p>We offer customizable solutions to meet your unique business needs, whether you need a complete website redesign or just help with a specific aspect of your online presence. This means you can choose the services that are most relevant to your business and budget. </p>
+                    {/* <button className='btn-style'>VIEW CASE STUDY</button> */}
                   </Col>
                   <Col className='col-md-6 col-12'>
                     <MotionWrapper>
