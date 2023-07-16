@@ -1,0 +1,95 @@
+.header {
+    min-height: 58px;
+
+    .cont_btn {
+        background: #FFFFFF;
+        border: 1px solid #3D5FAC;
+        border-radius: 50%;
+        height: 32px;
+        width: 32px;
+        display: inline-grid;
+        place-items: center;
+        font-size: 1rem;
+        color: #3D5FAC;
+        margin-right: 1rem;
+    }
+
+    .menuToggle {
+        span {
+            display: block;
+            width: 33px;
+            height: 4px;
+            margin-bottom: 5px;
+            position: relative;
+            background: #1D1D1D;
+            border-radius: 3px;
+            z-index: 1;
+            transform-origin: 4px 0px;
+            transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+
+            &:first-child {
+                transform-origin: 0% 0%;
+            }
+
+            &:nth-last-child(2) {
+                transform-origin: 0% 100%;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &.menuOpen {
+            span {
+                transform: rotate(-45deg) translate(0px, 0px);
+
+                &:nth-last-child(2) {
+                    transform: rotate(45deg) translate(-8px, -10px);
+                }
+
+                &:nth-last-child(3) {
+                    opacity: 0;
+                    transform: rotate(0deg) scale(0, 0);
+                }
+            }
+        }
+    }
+
+    .menu {
+        position: absolute;
+        height: calc(100vh - 58px);
+        right: 0;
+        top: 58px;
+        width: 300px;
+        padding: 0 10px;
+        background: var(--white);
+        transform: translate(100%, 0);
+        transform-origin: 0% 0%;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+
+        &.open_menu {
+            transform: none;
+        }
+
+        .nav {
+            flex-direction: column;
+
+            .nav_item {
+                .nav_link {
+                    border-bottom: 1px solid #DCDCDC;
+                    font-size: 1rem;
+                    display: block;
+                    font-weight: 400;
+                    color: #1D1D1D;
+                    padding: 16px 10px;
+                    transition: 0.3s ease-in-out;
+                    &:hover{
+                        background: var(--primary);
+                        color: var(--white);
+                    }
+                }
+            }
+        }
+    }
+}
