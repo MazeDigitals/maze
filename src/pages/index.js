@@ -273,15 +273,11 @@ export default function Home() {
                 </Row>
                 <Row className='align-items-center'>
                   <Col className='col-md-6 col-12'>
-
-
-                    <h2><span className='d-block'>UI/UX Design</span> Boost Conversions</h2>
-                    {/* <br />Ecommerce Websites */}
-                    {/* <br />Ecommerce Websites */}<p>
-                      Our team of designers and developers are experienced in creating exceptional user experiences that boost conversions and enhance brand reputation. We can help you design and develop a website that is not only visually stunning but also highly functional and user-friendly, leading to higher conversion rates and more sales. </p>
+                    <h2><span className='d-block'>UI/UX Design</span> Boost Conversions
+                      {/* <br />Ecommerce Websites */}
+                    </h2>
+                    <p>Our team of designers and developers are experienced in creating exceptional user experiences that boost conversions and enhance brand reputation. We can help you design and develop a website that is not only visually stunning but also highly functional and user-friendly, leading to higher conversion rates and more sales. </p>
                     {/* <button className='btn-style'>VIEW CASE STUDY</button> */}
-
-
                   </Col>
                   <Col className='col-md-6 col-12'>
                     <MotionWrapper>
