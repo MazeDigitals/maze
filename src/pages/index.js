@@ -231,7 +231,7 @@ export default function Home() {
           <Container>
             <Row className='justify-content-center d-flex d-md-none d-lg-none'>
               <Col className='col-lg-4 col-md-8 col-12 text-center mb-5'>
-                <h4 className='fw-semibold mb-2'>LOREM IPSUM</h4>
+                <h4 className='fw-semibold mb-2'>Empowering Digital Success</h4>
                 <p className='fw-normal'>Develop results-driven products for entrepreneurs, startups, and enterprises with a leading software development company.</p>
               </Col>
             </Row>
