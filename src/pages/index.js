@@ -231,7 +231,7 @@ export default function Home() {
           <Container>
             <Row className='justify-content-center d-flex d-md-none d-lg-none'>
               <Col className='col-lg-4 col-md-8 col-12 text-center mb-5'>
-                <h4 className='fw-semibold mb-2'>LOREM IPSUM</h4>
+                <h4 className='fw-semibold mb-2'>Empowering Digital Success</h4>
                 <p className='fw-normal'>Develop results-driven products for entrepreneurs, startups, and enterprises with a leading software development company.</p>
               </Col>
             </Row>
@@ -240,10 +240,10 @@ export default function Home() {
                 <Row className='align-items-center'>
                   <Col className='col-md-6 col-12'>
                     <h2>
-                      <span className='d-block'>Web Solutions</span> 
+                      <span className='d-block'>Web Solutions</span>
                       Increase Online Visibility
                       {/* <br />Ecommerce Websites */}
-                      </h2>
+                    </h2>
                     <p>We provide website design and development services that are optimized for search engines and provide a great user experience. This means your website is more likely to rank highly in search engine results pages, increasing your online visibility and driving more traffic to your website. </p>
                     {/* <button className='btn-style'>VIEW CASE STUDY</button> */}
                   </Col>
@@ -257,8 +257,8 @@ export default function Home() {
                 </Row>
                 <Row className='align-items-center flex-row-reverse'>
                   <Col className='col-md-6 col-12'>
-                    <h2><span className='d-block'>Tailored Solutions</span> Customizable Solutions 
-                    {/* <br />Ecommerce Websites */}
+                    <h2><span className='d-block'>Tailored Solutions</span> Customizable Solutions
+                      {/* <br />Ecommerce Websites */}
                     </h2>
                     <p>We offer customizable solutions to meet your unique business needs, whether you need a complete website redesign or just help with a specific aspect of your online presence. This means you can choose the services that are most relevant to your business and budget. </p>
                     {/* <button className='btn-style'>VIEW CASE STUDY</button> */}
@@ -273,8 +273,8 @@ export default function Home() {
                 </Row>
                 <Row className='align-items-center'>
                   <Col className='col-md-6 col-12'>
-                    <h2><span className='d-block'>UI/UX Design</span> Boost Conversions 
-                    {/* <br />Ecommerce Websites */}
+                    <h2><span className='d-block'>UI/UX Design</span> Boost Conversions
+                      {/* <br />Ecommerce Websites */}
                     </h2>
                     <p>Our team of designers and developers are experienced in creating exceptional user experiences that boost conversions and enhance brand reputation. We can help you design and develop a website that is not only visually stunning but also highly functional and user-friendly, leading to higher conversion rates and more sales. </p>
                     {/* <button className='btn-style'>VIEW CASE STUDY</button> */}
