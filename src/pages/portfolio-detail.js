@@ -46,8 +46,8 @@ const PortfolioDetail = () => {
                     <Container>
                         <Row className='justify-content-center align-items-center'>
                             <Col className='col-lg-5 col-12'>
-                                <h2 className='fs-1 fw-bold mb-3'><span className='d-block fs-5 fw-medium mb-3'>LOREM IPSUM</span>Feature-Rich <br className='d-none d-lg-block' /> Ecommerce Websites</h2>
-                                <p className='fs-6 fw-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
+                                <h2 className='fs-1 fw-bold mb-3'><span className='d-block fs-5 fw-medium mb-3'>Essential UI: Mastery</span>Crafting Engaging, <br className='d-none d-lg-block' />  Intuitive Interfaces</h2>
+                                <p className='fs-6 fw-normal'>Unlock the secrets to exceptional UI design with our comprehensive guide. Discover the essential elements that make up a captivating user interface and learn how to master them. From color schemes and typography to layout and navigation, we delve into the key principles and best practices that will elevate your design skills. Whether you're a beginner or a seasoned pro, this resource-packed article will equip you with the knowledge and techniques you need to create interfaces that truly engage and delight users. Take your UI design to the next level and make a lasting impact with your digital creations.</p>
                             </Col>
 
                             <Col className='col-lg-5 col-12'>
@@ -58,8 +58,8 @@ const PortfolioDetail = () => {
                         </Row>
                         <Row className='justify-content-center align-items-center flex-row-reverse'>
                             <Col className='col-lg-5 col-12'>
-                                <h2 className='fs-1 fw-bold mb-3'><span className='d-block fs-5 fw-medium mb-3'>LOREM IPSUM</span>Feature-Rich <br className='d-none d-lg-block' /> Ecommerce Websites</h2>
-                                <p className='fs-6 fw-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
+                                <h2 className='fs-1 fw-bold mb-3'><span className='d-block fs-5 fw-medium mb-3'>UI Pro Tips</span>Elevating User  <br className='d-none d-lg-block' /> Experiences Together</h2>
+                                <p className='fs-6 fw-normal'>Discover the expert secrets of UI design with our invaluable pro tips. Dive into the world of user interfaces and learn how to create captivating experiences that leave a lasting impression. From intuitive navigation to pixel-perfect layouts, we cover the essential techniques that will take your UI design skills to new heights. Whether you're a novice designer or a seasoned professional, our comprehensive guide will equip you with the knowledge and insights needed to craft interfaces that truly resonate with users. Join us on this journey of UI excellence and elevate your design game today.</p>
                             </Col>
 
                             <Col className='col-lg-5 col-12'>
@@ -70,8 +70,8 @@ const PortfolioDetail = () => {
                         </Row>
                         <Row className='justify-content-center align-items-center'>
                             <Col className='col-lg-5 col-12'>
-                                <h2 className='fs-1 fw-bold mb-3'><span className='d-block fs-5 fw-medium mb-3'>LOREM IPSUM</span>Feature-Rich <br className='d-none d-lg-block' /> Ecommerce Websites</h2>
-                                <p className='fs-6 fw-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
+                                <h2 className='fs-1 fw-bold mb-3'><span className='d-block fs-5 fw-medium mb-3'>UI Essentials</span>Creating Smooth <br className='d-none d-lg-block' /> User Experiences</h2>
+                                <p className='fs-6 fw-normal'>Uncover the fundamental principles of UI design with our comprehensive guide to UI Essentials. Dive into the world of user interfaces and learn how to create seamless experiences that captivate users. From intuitive interactions to effective visual hierarchy, we explore the essential elements that contribute to exceptional UI design. Whether you're a beginner or an experienced designer, our practical tips and best practices will empower you to craft interfaces that are not only visually stunning but also highly usable. Join us on this journey as we unravel the secrets of UI design and help you create interfaces that truly shine.</p>
                             </Col>
 
                             <Col className='col-lg-5 col-12'>

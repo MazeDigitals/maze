@@ -46,8 +46,8 @@ function Blogs() {
                 <Row>
                     <Col className='col-md-6 col-12 text-center text-md-start'>
                         <h3 className='fw-semibold mb-3'>BLOGS</h3>
-                        <p className='fw-normal'>It's important to know the process! Our blog bank is here to help you understand how 
-                        we and the digital world operate. The positive aspect is that our prices are low.</p>
+                        <p className='fw-normal'>It's important to know the process! Our blog bank is here to help you understand how
+                            we and the digital world operate. The positive aspect is that our prices are low.</p>
                     </Col>
                     <Col className='col-md-6 col-12 text-end'>
                         <a className='text-end'>View all</a>
@@ -115,8 +115,8 @@ function Blogs() {
                         <div className={`${styles.blog_card}`}>
                             <figure><img src='/images/blog-6.svg' alt="icon" /></figure>
                             <div className={`${styles.content}`}>
-                                <h3><span>UI/UX</span>Don't Read <br />The rules</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor in cididunt ut labore et dolore.</p>
+                                <h3><span>UI/UX</span> Design: Breaking the Rules</h3>
+                                <p>Discover the art of defying conventional design principles and pushing the boundaries of UI/UX. In this insightful article, we explore how innovative designers challenge the norms, creating captivating user experiences that stand out from the crowd. From unconventional layouts to daring color schemes, we delve into real-world examples that inspire you to break free from the traditional rules. Join us on this creative journey as we uncover the secrets behind successful rule-breaking UI/UX designs and learn how to create impactful interfaces that leave a lasting impression.</p>
                             </div>
                         </div>
                     </SwiperSlide>
