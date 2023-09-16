@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import dynamic from 'next/dynamic'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.scss'
@@ -51,7 +51,47 @@ const imageVariants = {
   }
 }
 
+
+
+
 export default function Home() {
+
+
+
+  const introVideoRef = useRef(null);
+  const introLoopVideoRef = useRef(null);
+
+  useEffect(() => {
+    const introVideo = introVideoRef.current;
+    const introLoopVideo = introLoopVideoRef.current;
+
+    // Set the opacity of the intro-loop video to 0 initially
+    introLoopVideo.style.opacity = '0';
+
+    // Add an event listener to the intro video to detect when it ends
+    introVideo.addEventListener('ended', function () {
+      // When the intro video ends, hide it and show the intro-loop video
+      introVideo.style.opacity = '0';
+      introLoopVideo.style.opacity = '1';
+
+      // Start playing the intro-loop video
+      introLoopVideo.play();
+    });
+
+    // Add an event listener to the intro video to track time updates
+    introVideo.addEventListener('timeupdate', function () {
+      // You can add a condition based on the current time of the video
+      const currentTime = introVideo.currentTime;
+
+      // Example: When the intro video reaches a certain time (e.g., 5 seconds), do something
+      if (currentTime >= 5) {
+        // Add your condition and actions here
+      }
+    });
+  }, []);
+
+
+
   return (
     <>
       <Head>
@@ -64,17 +104,29 @@ export default function Home() {
         <DynamicHeader />
         {/* BANNER SECTION */}
         <section className={`${styles.banner} text-center`}>
-          <Container>
-            <Row>
-              <Col>
-                <MotionWrapper>
-                  <motion.h1 variants={cardVariants}>Creating Cost-Effective <br /> Solutions for You </motion.h1>
-                  <motion.p variants={cardVariants}>Create a presence that keeps you winning in these short turnaround times. As a <br className='d-none d-lg-block' />
-                    design and development company in the USA, we excel at our expertise.</motion.p>
-                </MotionWrapper>
-              </Col>
-            </Row>
-          </Container>
+          <div className="video-background">
+            <video className="intro" muted playsInline autoPlay ref={introVideoRef}>
+              <source src="/videos/intro.webm" type="video/webm" />
+              <source src="/videos/intro.mp4" type="video/mp4" />
+            </video>
+            <video className="intro-loop" muted playsInline loop ref={introLoopVideoRef}>
+              <source src="/videos/loop.webm" type="video/webm" />
+              <source src="/videos/loop.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div className={styles.content_wrapper}>
+            <Container>
+              <Row>
+                <Col>
+                  <MotionWrapper>
+                    <motion.h1 variants={cardVariants}>Creating Cost-Effective <br /> Solutions for You </motion.h1>
+                    <motion.p variants={cardVariants}>Create a presence that keeps you winning in these short turnaround times. As a <br className='d-none d-lg-block' />
+                      design and development company in the USA, we excel at our expertise.</motion.p>
+                  </MotionWrapper>
+                </Col>
+              </Row>
+            </Container>
+          </div>
         </section>
         {/* BANNER SECTION */}
 
