@@ -41,6 +41,22 @@ const cardVariants = {
   }
 };
 
+const textVariants = {
+  offscreen: {
+    x: -1000
+  },
+  onscreen: {
+    x: 0,
+    transition: {
+      type: "spring",
+      bounce: 1,
+      stiffness: 50,
+      duration: 1,
+      delay: 1
+    }
+  }
+};
+
 const imageVariants = {
   hidden: { opacity: 0 },
   show: {
@@ -103,7 +119,7 @@ export default function Home() {
       <main className={styles.main}>
         <DynamicHeader />
         {/* BANNER SECTION */}
-        <section className={`${styles.banner} text-center`}>
+        <section className={`${styles.banner} text-left`}>
           <div className="video-background">
             <video className="intro" muted playsInline autoPlay ref={introVideoRef}>
               <source src="/videos/intro.webm" type="video/webm" />
@@ -119,8 +135,8 @@ export default function Home() {
               <Row>
                 <Col>
                   <MotionWrapper>
-                    <motion.h1 variants={cardVariants}>Creating Cost-Effective <br /> Solutions for You </motion.h1>
-                    <motion.p variants={cardVariants}>Create a presence that keeps you winning in these short turnaround times. As a <br className='d-none d-lg-block' />
+                    <motion.h1 variants={textVariants}>Creating Cost-Effective <br /> Solutions for You </motion.h1>
+                    <motion.p variants={textVariants}>Create a presence that keeps you winning in these short turnaround times. As a <br className='d-none d-lg-block' />
                       design and development company in the USA, we excel at our expertise.</motion.p>
                   </MotionWrapper>
                 </Col>
