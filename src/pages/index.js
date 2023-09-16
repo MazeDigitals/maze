@@ -71,10 +71,7 @@ export default function Home() {
     // Add an event listener to the intro video to detect when it ends
     introVideo.addEventListener('ended', function () {
       // When the intro video ends, hide it and show the intro-loop video
-      introVideo.style.display = 'none';
-      introLoopVideo.style.display = 'block';
-
-      // Set the opacity of the intro-loop video to 1
+      introVideo.style.opacity = '0';
       introLoopVideo.style.opacity = '1';
 
       // Start playing the intro-loop video
