@@ -50,7 +50,7 @@
             font-size: 3rem;
             font-weight: 800;
             color: var(--white);
-            line-height: normal;
+            line-height: 1.25;
 
             @media (max-width: 1199.98px) {
                 font-size: 2.5rem;
@@ -63,6 +63,84 @@
 
         p {
             color: var(--white);
+            max-width: 550px;
+        }
+    }
+
+    .aboutSec {
+        padding-top: 0;
+        position: relative;
+
+        .info_wrapper {
+            margin: -6rem 0 0rem;
+            padding: 4rem 3rem;
+            background: var(--white);
+            border-radius: 12px;
+            border: 2px solid #09AADE;
+            box-shadow: 0px 4px 105px 0px rgba(44, 113, 246, 0.35);
+
+            @media (max-width:767px) {
+                padding: 2rem 1.5rem;
+                margin-top: -10rem;
+            }
+
+            .info_box {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                .content {
+                    h3 {
+                        color: #000021;
+                        font-weight: 700;
+                        margin-bottom: 0.25rem;
+                        text-transform: uppercase;
+                        font-size: 1.5rem;
+                    }
+
+                    p {
+                        color: #000021;
+                        line-height: 1;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .services_section {
+        &.bg {
+            border-top: 1px solid #E1E1E1;
+            border-bottom: 1px solid #E1E1E1;
+            background: #FAFAFB;
+        }
+
+        h2 {
+            color: #2C71F6;
+        }
+
+        h3 {
+            font-size: 3.25rem;
+            font-weight: 800;
+            color: #18181B;
+            line-height: normal;
+            line-height: 1.15;
+
+            @media (max-width: 1199.98px) {
+                font-size: 2.5rem;
+            }
+
+            @media (max-width:767px) {
+                font-size: 1.75rem;
+            }
+        }
+
+        p {
+            color: #3F3F46;
+        }
+
+        figure {
+            text-align: center;
         }
     }
 }

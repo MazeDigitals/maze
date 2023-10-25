@@ -31,6 +31,7 @@ const landingPage = () => {
       </Head>
       <main className={`${styles.main}`}>
         <DynamicHeader />
+        {/* Banner Section start */}
         <section className={styles.banner}>
           <Container>
             <Row className='align-items-center'>
@@ -41,13 +42,106 @@ const landingPage = () => {
                 <Link href="#" className="btn-style">Get Started today</Link>
               </Col>
               <Col className='col-lg-6 col-12'>
-                <figure class="figure">
+                <figure>
                   <img src="/images/banner-img.svg" class="img-fluid" alt="banner image" />
                 </figure>
               </Col>
             </Row>
           </Container>
         </section>
+        {/* Banner Section Ends */}
+
+        {/* Info box Section Start */}
+        <section className={`${styles.aboutSec}`}>
+          <Container>
+            <div className={`${styles.info_wrapper}`}>
+              <Row>
+                <Col className='col-md-3 col-sm-6'>
+                  <div className={styles.info_box}>
+                    <figure>
+                      <img src="/images/ranking.svg" class="img-fluid" alt="icon" />
+                    </figure>
+                    <div className={styles.content}>
+                      <h3>12k+</h3>
+                      <p>5-star Google reviews</p>
+                    </div>
+                  </div>
+                </Col>
+                <Col className='col-md-3 col-sm-6'>
+                  <div className={styles.info_box}>
+                    <figure>
+                      <img src="/images/user-tick.svg" class="img-fluid" alt="icon" />
+                    </figure>
+                    <div className={styles.content}>
+                      <h3>40+</h3>
+                      <p>WordPress experts</p>
+                    </div>
+                  </div>
+                </Col>
+                <Col className='col-md-3 col-sm-6'>
+                  <div className={styles.info_box}>
+                    <figure>
+                      <img src="/images/timer-start.svg" class="img-fluid" alt="icon" />
+                    </figure>
+                    <div className={styles.content}>
+                      <h3>100%</h3>
+                      <p>uptime guarantee</p>
+                    </div>
+                  </div>
+                </Col>
+                <Col className='col-md-3 col-sm-6'>
+                  <div className={styles.info_box}>
+                    <figure>
+                      <img src="/images/verified.svg" class="img-fluid" alt="icon" />
+                    </figure>
+                    <div className={styles.content}>
+                      <h3>12+ years</h3>
+                      <p>serving WordPress clients</p>
+                    </div>
+                  </div>
+                </Col>
+              </Row>
+            </div>
+          </Container>
+        </section>
+        {/* Info box Section Ends */}
+
+        {/* Services Section Start */}
+        <section className={`${styles.services_section}`}>
+          <Container>
+            <Row className="align-items-center">
+              <Col className="col-md-6 col-12">
+                <figure>
+                  <img src="/images/service-1.png" class="img-fluid" alt="Services" />
+                </figure>
+              </Col>
+              <Col className="col-md-6 col-12">
+                <h2 className="fs-5 fw-semibold mb-3 opensans">We're a team of 40+, headquartered in the US</h2>
+                <h3 className="fw-bold opensans">Real people doing <br className="d-none d-md-block" /> real work, with <br className="d-none d-md-block" /> clients that matter</h3>
+                <p className="fs-4 fw-normal">Our strength is our team. With over 40 experts based in the US, we've combined talents from project managers, designers, developers, and support staff to emerge as a leading WordPress agency.</p>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+
+        <section className={`${styles.services_section} ${styles.bg}`}>
+          <Container>
+            <Row className="align-items-center">
+              <Col className="col-md-6 col-12">
+                <h2 className="fs-5 fw-semibold mb-3 opensans">We're a team of 40+, headquartered in the US</h2>
+                <h3 className="fw-bold opensans">Expert WordPress <br className="d-none d-md-block" /> design, development, <br className="d-none d-md-block" /> support & maintenance</h3>
+                <p className="fs-4 fw-normal">Our process is simple: We envision your dream website, and then we build it. With Maze Digital, you're assured of world-class WordPress solutions tailored to your unique business needs.</p>
+              </Col>
+              <Col className="col-md-6 col-12">
+                <figure>
+                  <img src="/images/service-2.png" class="img-fluid" alt="Services" />
+                </figure>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+        {/* Services Section Ends */}
+
         <DynamicFooter />
       </main>
     </>
