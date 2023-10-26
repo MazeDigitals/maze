@@ -667,3 +667,55 @@ p {
     }
   }
 }
+
+
+
+
+// Accordion Item
+.accordion {
+  .accordion-item {
+    border: 0;
+    padding: 1.5rem;
+
+    .accordion-header {
+
+      .accordion-button {
+        box-shadow: none;
+        padding: 0;
+
+        &::after {
+          background-image: url(../../public/images/plus-circle.png);
+        }
+
+        &:not(.collapsed) {
+          background: transparent;
+
+          &::after {
+            background-image: url(../../public/images/minus-circle.png);
+            transform: none;
+          }
+        }
+
+        h3 {
+          color: #101828;
+        }
+      }
+    }
+
+    .accordion-collapse {
+      .accordion-body {
+        padding: 1rem 0 0;
+
+        p {
+          margin: 0;
+          color: #667085;
+          font-weight: 400;
+        }
+      }
+    }
+
+    &+.accordion-item {
+      border-top: 1px solid #EAECF0;
+    }
+  }
+}
