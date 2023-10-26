@@ -48,12 +48,15 @@ const landingPage = () => {
         {/* Banner Section start */}
         <section className={styles.banner}>
           <Container>
-            <Row className='align-items-center'>
+            <Row className='align-items-center gy-4'>
               <Col className='col-lg-6 col-12'>
-                <h1 className="fs-5 fw-semibold opensans">TURN YOUR WEBSITE INTO A CONVERSION MACHINE</h1>
-                <h2 className="opensans">Professional, Affordable WordPress Solutions Tailored Just for You</h2>
-                <p className="fs-5 fw-normal opensans mb-4">Your website isn't just a digital business card; it's a powerful marketing tool. At Maze Digital, we leverage the power of WordPress to craft websites that don't just look good but drive results.</p>
-                <Link href="#" className="btn-style">Get Started today</Link>
+                <div className={styles.wrapper}>
+                  <img src="/images/bg-star.svg" class="img-fluid" alt="Star" />
+                  <h1 className="fs-5 fw-semibold opensans">TURN YOUR WEBSITE INTO A CONVERSION MACHINE</h1>
+                  <h2 className="opensans">Professional, Affordable WordPress Solutions Tailored Just for You</h2>
+                  <p className="fs-5 fw-normal opensans mb-4">Your website isn't just a digital business card; it's a powerful marketing tool. At Maze Digital, we leverage the power of WordPress to craft websites that don't just look good but drive results.</p>
+                  <Link href="#" className="btn-style">Get Started today</Link>
+                </div>
               </Col>
               <Col className='col-lg-6 col-12'>
                 <figure>
@@ -69,8 +72,8 @@ const landingPage = () => {
         <section className={`${styles.aboutSec}`}>
           <Container>
             <div className={`${styles.info_wrapper}`}>
-              <Row>
-                <Col className='col-md-3 col-sm-6'>
+              <Row className="gy-4">
+                <Col className='col-lg-3 col-sm-6 col-12'>
                   <div className={styles.info_box}>
                     <figure>
                       <img src="/images/ranking.svg" class="img-fluid" alt="icon" />
@@ -81,7 +84,7 @@ const landingPage = () => {
                     </div>
                   </div>
                 </Col>
-                <Col className='col-md-3 col-sm-6'>
+                <Col className='col-lg-3 col-sm-6 col-12'>
                   <div className={styles.info_box}>
                     <figure>
                       <img src="/images/user-tick.svg" class="img-fluid" alt="icon" />
@@ -92,7 +95,7 @@ const landingPage = () => {
                     </div>
                   </div>
                 </Col>
-                <Col className='col-md-3 col-sm-6'>
+                <Col className='col-lg-3 col-sm-6 col-12'>
                   <div className={styles.info_box}>
                     <figure>
                       <img src="/images/timer-start.svg" class="img-fluid" alt="icon" />
@@ -103,7 +106,7 @@ const landingPage = () => {
                     </div>
                   </div>
                 </Col>
-                <Col className='col-md-3 col-sm-6'>
+                <Col className='col-lg-3 col-sm-6 col-12'>
                   <div className={styles.info_box}>
                     <figure>
                       <img src="/images/verified.svg" class="img-fluid" alt="icon" />
@@ -123,7 +126,7 @@ const landingPage = () => {
         {/* Services Section Start */}
         <section className={`${styles.services_section}`}>
           <Container>
-            <Row className="align-items-center">
+            <Row className="align-items-center gy-4">
               <Col className="col-md-6 col-12">
                 <figure>
                   <img src="/images/service-1.png" class="img-fluid" alt="Services" />
@@ -140,7 +143,7 @@ const landingPage = () => {
 
         <section className={`${styles.services_section} ${styles.bg}`}>
           <Container>
-            <Row className="align-items-center">
+            <Row className="align-items-center gy-4">
               <Col className="col-md-6 col-12">
                 <h2 className="fs-5 fw-semibold mb-3 opensans">We're a team of 40+, headquartered in the US</h2>
                 <h3 className="fw-bold opensans">Expert WordPress <br className="d-none d-md-block" /> design, development, <br className="d-none d-md-block" /> support & maintenance</h3>
@@ -158,8 +161,8 @@ const landingPage = () => {
 
         <section className={`${styles.services_section} ${styles.wp_services}`}>
           <Container>
-            <Row className="justify-content-between">
-              <Col className="col-md-12 col-12 text-center mb-5">
+            <Row className="justify-content-between gy-4">
+              <Col className="col-md-12 col-12 text-center">
                 <h2 className="fs-5 fw-semibold mb-3 opensans"><img src="/images/logo-icon.png" class="img-fluid" alt="Services" /> MAZE DIGITAL</h2>
                 <h3 className="fw-bold opensans">Dependable WordPress Services</h3>
                 <p className="fs-4 fw-normal">From the initial design phase to ongoing support, Maze Digital has you covered.</p>
@@ -221,7 +224,11 @@ const landingPage = () => {
 
 
               <Col className="col-12 text-center mt-5">
-                <Link href="#" className={`${styles.btnstyle}`}>GET STARTED NOW <img src="/images/arrow-long.svg" class="img-fluid" alt="Star" /></Link>
+                <div className={styles.button_wrapper}>
+                  <hr />
+                  <Link href="#" className={`${styles.btnstyle}`}>GET STARTED NOW <img src="/images/arrow-long.svg" class="img-fluid" alt="Star" /></Link>
+                  <hr />
+                </div>
               </Col>
             </Row>
 
