@@ -17,7 +17,7 @@ const DynamicFooter = dynamic(() => import("components/Footer/Footer"), {
   ssr: false,
 });
 
-const landingPage = () => {
+const marketing = () => {
 
 
   const [open, setOpen] = useState('1');
@@ -369,4 +369,4 @@ const landingPage = () => {
   );
 };
 
-export default landingPage;
+export default marketing;
