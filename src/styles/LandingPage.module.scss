@@ -177,6 +177,10 @@
                     right: -4rem;
                     top: -4rem;
                     z-index: -1;
+
+                    @media (max-width:767px) {
+                        display: none;
+                    }
                 }
             }
 
