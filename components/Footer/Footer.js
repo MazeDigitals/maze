@@ -32,7 +32,6 @@ const Footer = () => {
                                     <UncontrolledCollapse toggler="#toggler-1" className={styles.collapse_wrap}>
                                         <p className='text-white'>7901, 4th st N STE 5217, St.Peterburg FL, USA 33702</p>
                                         <p className='text-white'>Unit 13 1940 Ironstone Drive, Burlington, ON, Canada L5A3L7</p>
-                                        <p className='text-white'>Office # 216, Tehseen Tower, PECHS Block 7/8</p>
                                     </UncontrolledCollapse>
                                 </div>
                                 <div className={styles.menu_wrap}>
@@ -99,7 +98,6 @@ const Footer = () => {
                                 <li><address>7901, 4th st N STE 5217,
                                     St.Peterburg FL, USA 33702</address></li>
                                 <li><address>Unit 13 1940 Ironstone Drive, Burlington, ON, Canada L5A3L7</address></li>
-                                <li><address>Office # 216, Tehseen Tower, PECHS Block 7/8</address></li>
                             </ul>
                         </Col>
                         <Col className='col-12 mt-4'>
