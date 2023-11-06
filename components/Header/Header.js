@@ -85,14 +85,14 @@ const ServiceMegaMenu = () => {
                             <li>
                                 <a href='/product-design'>UI/UX Design <span>With a great user interface and user experience, we ensure to define your business's motive just as you want it to be.</span></a>
                             </li>
-                            {/* <li>
-                            <a href='/product-design'>Design Services <span>We provide logo designing services, keeping specific business niches in mind.</span></a>
-                        </li> */}
                             <li>
                                 <a href='/web-development'>Web Development <span>The world is moving towards believing that websites can do wonders in digitally growing a business's potential.</span></a>
                             </li>
                             <li>
                                 <a href='/ecommerce'>Ecommerce <span>The E-Commerce market is significantly growing at a much faster pace than ever. </span></a>
+                            </li>
+                            <li>
+                                <a href='/wordpress-web-development'>WordPress Web Development <span>We provide WordPress Web Development services, keeping specific business niches in mind.</span></a>
                             </li>
                         </ul>
 

@@ -24,6 +24,7 @@ const Footer = () => {
                                             <li><a href='/'>UI/UX Design</a></li>
                                             <li><a href='/'>Web Development</a></li>
                                             <li><a href='/'>Ecommerce</a></li>
+                                            <li><a href='/'>WordPress Web Development</a></li>
                                         </ul>
                                     </UncontrolledCollapse>
                                 </div>
@@ -83,6 +84,7 @@ const Footer = () => {
                                 <li><a href='#'>Design Service</a></li>
                                 <li><a href='#'>Web Development</a></li>
                                 <li><a href='#'>Ecommerce</a></li>
+                                <li><a href='#'>WordPress Web Development</a></li>
                             </ul>
                         </Col>
                         <Col className='col-lg-3'>

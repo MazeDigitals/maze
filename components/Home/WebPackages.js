@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, Container, Row } from 'reactstrap'
-import Scrollbars from 'react-custom-scrollbars';
+import Scrollbars from 'react-custom-scrollbars-2';
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import { Navigation } from "swiper";
 // import useSwiperRef from './useSwiperRef';

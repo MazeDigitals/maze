@@ -7,7 +7,7 @@ import { Col, Container, Row } from 'reactstrap'
 // Import Swiper styles
 // import "swiper/css";
 // import "swiper/css/navigation";
-import Scrollbars from 'react-custom-scrollbars';
+import Scrollbars from 'react-custom-scrollbars-2';
 
 
 

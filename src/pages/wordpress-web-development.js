@@ -1,12 +1,12 @@
 import Head from "next/head";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import { Inter } from "@next/font/google";
 import { Col, Container, Row } from "reactstrap";
 import styles from "@/styles/LandingPage.module.scss";
 import Link from "next/link";
 import { Accordion, AccordionBody, AccordionHeader, AccordionItem } from 'reactstrap';
-
+import { gsap } from "gsap"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +29,45 @@ const marketing = () => {
     }
   };
 
+  useEffect(() => {
+    const tl = gsap.timeline()
+    tl.fromTo(
+      ".box1",
+      {
+        clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)"
+      },
+      {
+        delay: 1,
+        duration: 1,
+        clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)"
+      }
+    )
+      .fromTo(
+        ".box2",
+        {
+          clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)"
+        },
+        {
+          duration: 1,
+          clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)"
+        },
+        "-=0.8"
+      )
+      .fromTo(
+        ".box3 ",
+        {
+          clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)"
+        },
+        {
+          duration: 1,
+          clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)"
+        },
+        "-=0.7"
+      )
+      .fromTo(".banner-img", { scale: 0 }, { duration: 1, scale: 1 }, "-=1")
+      .fromTo(".heading", { xPercent: -200 }, { duration: 0.5, stagger: 0.2, xPercent: 0 }); // Move the headings off the viewport to the left
+
+  }, [])
 
   return (
     <>
@@ -47,20 +86,23 @@ const marketing = () => {
         <DynamicHeader />
         {/* Banner Section start */}
         <section className={styles.banner}>
+          <div className={`${styles.box1} box1`} />
+          <div className={`${styles.box2} box2`} />
+          <div className={`${styles.box3} box3`} />
           <Container>
             <Row className='align-items-center gy-4'>
               <Col className='col-lg-6 col-12'>
                 <div className={styles.wrapper}>
                   <img src="/images/bg-star.svg" class="img-fluid" alt="Star" />
-                  <h1 className="fs-5 fw-semibold opensans">TURN YOUR WEBSITE INTO A CONVERSION MACHINE</h1>
-                  <h2 className="opensans">Professional, Affordable WordPress Solutions Tailored Just for You</h2>
-                  <p className="fs-5 fw-normal opensans mb-4">Your website isn't just a digital business card; it's a powerful marketing tool. At Maze Digital, we leverage the power of WordPress to craft websites that don't just look good but drive results.</p>
-                  <Link href="#" className="btn-style">Get Started today</Link>
+                  <h1 className="fs-5 fw-semibold opensans heading">TURN YOUR WEBSITE INTO A CONVERSION MACHINE</h1>
+                  <h2 className="opensans heading">Professional, Affordable WordPress Solutions Tailored Just for You</h2>
+                  <p className="fs-5 fw-normal opensans mb-4 heading">Your website isn't just a digital business card; it's a powerful marketing tool. At Maze Digital, we leverage the power of WordPress to craft websites that don't just look good but drive results.</p>
+                  <Link href="#" className="btn-style heading">Get Started today</Link>
                 </div>
               </Col>
               <Col className='col-lg-6 col-12'>
                 <figure>
-                  <img src="/images/banner-img.svg" class="img-fluid" alt="banner image" />
+                  <img src="/images/banner-img.svg" class="img-fluid banner-img" alt="banner image" />
                 </figure>
               </Col>
             </Row>
