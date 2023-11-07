@@ -64,8 +64,8 @@ const marketing = () => {
         },
         "-=0.7"
       )
-      .fromTo(".banner-img", { scale: 0 }, { duration: 1, scale: 1 }, "-=1")
-      .fromTo(".heading", { xPercent: -200 }, { duration: 0.5, stagger: 0.2, xPercent: 0 }); // Move the headings off the viewport to the left
+      .fromTo(".heading", { xPercent: -1000 }, { duration: 0.5, stagger: 0.2, xPercent: 0 }) // Move the headings off the viewport to the left
+      .fromTo(".banner-img", { scale: 0 }, { duration: 1, scale: 1 }, "-=1");
 
   }, [])
 
