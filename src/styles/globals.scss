@@ -719,3 +719,15 @@ p {
     }
   }
 }
+
+
+.image-reveal-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.hidden-image {
+  width: 100%;
+  opacity: 0;
+  // transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}

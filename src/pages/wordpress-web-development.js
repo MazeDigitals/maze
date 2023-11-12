@@ -7,6 +7,11 @@ import styles from "@/styles/LandingPage.module.scss";
 import Link from "next/link";
 import { Accordion, AccordionBody, AccordionHeader, AccordionItem } from 'reactstrap';
 import { gsap } from "gsap"
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+
+
+gsap.registerPlugin(ScrollTrigger)
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -68,6 +73,31 @@ const marketing = () => {
       .fromTo(".banner-img", { scale: 0 }, { duration: 1, scale: 1 }, "-=1");
 
   }, [])
+
+
+  useEffect(() => {
+    const hiddenImages = document.querySelectorAll('.hidden-image');
+
+    hiddenImages.forEach((image) => {
+      gsap.fromTo(
+        image,
+        {
+          opacity: 0,
+          scale: 0.5,
+        },
+        {
+          opacity: 1,
+          scale: 1,
+          scrollTrigger: {
+            trigger: image,
+            start: 'top center+=100',
+            end: 'bottom center',
+            scrub: false,
+          },
+        }
+      );
+    });
+  }, []);
 
   return (
     <>
@@ -170,8 +200,8 @@ const marketing = () => {
           <Container>
             <Row className="align-items-center gy-4">
               <Col className="col-md-6 col-12">
-                <figure>
-                  <img src="/images/service-1.png" class="img-fluid" alt="Services" />
+                <figure className="image-reveal-container">
+                  <img src="/images/service-1.png" class="img-fluid hidden-image" alt="Services" />
                 </figure>
               </Col>
               <Col className="col-md-6 col-12">
@@ -192,8 +222,8 @@ const marketing = () => {
                 <p className="fs-4 fw-normal">Our process is simple: We envision your dream website, and then we build it. With Maze Digital, you're assured of world-class WordPress solutions tailored to your unique business needs.</p>
               </Col>
               <Col className="col-md-6 col-12">
-                <figure>
-                  <img src="/images/service-2.png" class="img-fluid" alt="Services" />
+                <figure className="image-reveal-container">
+                  <img src="/images/service-2.png" class="img-fluid hidden-image" alt="Services" />
                 </figure>
               </Col>
             </Row>
@@ -260,7 +290,9 @@ const marketing = () => {
               <Col className="col-md-5 col-12">
                 <figure className={styles.img_wrapper}>
                   <img src="/images/star-1.svg" class={`img-fluid ${styles.star}`} alt="Star" />
-                  <img src="/images/3d-image.png" class="img-fluid" alt="3d rendering website hosting concept" />
+                  <figure className="image-reveal-container">
+                    <img src="/images/3d-image.png" class="img-fluid hidden-image" alt="3d rendering website hosting concept" />
+                  </figure>
                 </figure>
               </Col>
 
