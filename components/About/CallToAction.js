@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import { Col, Container, Row } from 'reactstrap'
 
@@ -9,7 +10,7 @@ const CallToAction = (props) => {
                     <Col className='col-md-6 text-center'>
                         <h2 className='text-white mb-3'>{props.heading}</h2>
                         <p className='text-white mb-4'>{props.desc}</p>
-                        <a href='/contact' className='btn-style'>Let's Connect</a>
+                        <Link href='/contact' className='btn-style mt-3'>Let's Connect</Link>
                     </Col>
                 </Row>
             </Container>

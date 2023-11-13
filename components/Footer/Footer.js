@@ -4,6 +4,7 @@ import styles from './Footer.module.scss';
 import { FaChevronDown, FaFacebookF, FaInstagram, FaLinkedinIn, FaPhoneAlt, FaRegEnvelope } from "react-icons/fa";
 import Image from 'next/image';
 import { isMobile } from 'react-device-detect';
+import Link from 'next/link';
 
 
 
@@ -14,17 +15,19 @@ const Footer = () => {
                 <Container>
                     <Row>
                         <Col className='col-12'>
-                            <a href='/' className='d-inline-block mb-4'><Image src='/images/footer-logo.svg' width={116} height={32} alt="logo" /></a>
+                            <Link href='/' className='d-inline-block mb-4'>
+                                <Image src='/images/footer-logo.svg' width={116} height={32} alt="logo" />
+                            </Link>
                             <p className='fs-8 text-white mb-3'>With Maze Digital, a plus point is never worrying about how much we will charge to develop your desired website, e-commerce platform, logo, UI/UX, and branding strategies. It is an easy-to-follow business building experience where our team will give regular feedback, suggestions, and updates regarding the process.</p>
                             <div className={styles.footer_menu}>
                                 <div className={styles.menu_wrap}>
                                     <button id="toggler">Services <FaChevronDown /></button>
                                     <UncontrolledCollapse toggler="#toggler" className={styles.collapse_wrap}>
                                         <ul>
-                                            <li><a href='/'>UI/UX Design</a></li>
-                                            <li><a href='/'>Web Development</a></li>
-                                            <li><a href='/'>Ecommerce</a></li>
-                                            <li><a href='/'>WordPress Web Development</a></li>
+                                            <li><Link href='/product-design'>UI/UX Design</Link></li>
+                                            <li><Link href='/web-development'>Web Development</Link></li>
+                                            <li><Link href='/ecommerce'>Ecommerce</Link></li>
+                                            <li><Link href='/wordpress-web-development'>WordPress Web Development</Link></li>
                                         </ul>
                                     </UncontrolledCollapse>
                                 </div>
@@ -68,7 +71,9 @@ const Footer = () => {
                 <Container>
                     <Row>
                         <Col className='col-lg-4'>
-                            <a href='/'><Image src='/images/footer-logo.svg' width={116} height={32} alt="logo" /></a>
+                            <Link href='/'>
+                                <Image src='/images/footer-logo.svg' width={116} height={32} alt="logo" />
+                            </Link>
                             <p className='text-white fs-8 mt-3'>With Maze Digital, a plus point is never worrying about how much we will charge to develop your desired website, e-commerce platform, logo, UI/UX, and branding strategies. It is an easy-to-follow business building experience where our team will give regular feedback, suggestions, and updates regarding the process.</p>
 
                             <ul className={`${styles.socialIcons}`}>
@@ -80,11 +85,10 @@ const Footer = () => {
                         <Col className='col-lg-2'>
                             <h3>Services</h3>
                             <ul>
-                                <li><a href='#'>UI/UX Design</a></li>
-                                <li><a href='#'>Design Service</a></li>
-                                <li><a href='#'>Web Development</a></li>
-                                <li><a href='#'>Ecommerce</a></li>
-                                <li><a href='#'>WordPress Web Development</a></li>
+                                <li><Link href='/product-design'>UI/UX Design</Link></li>
+                                <li><Link href='/web-development'>Web Development</Link></li>
+                                <li><Link href='/ecommerce'>Ecommerce</Link></li>
+                                <li><Link href='/wordpress-web-development'>WordPress Web Development</Link></li>
                             </ul>
                         </Col>
                         <Col className='col-lg-3'>

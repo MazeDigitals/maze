@@ -1,10 +1,11 @@
 import Head from 'next/head';
-import React from 'react';
+import React, { useState } from 'react';
 import dynamic from 'next/dynamic';
 import { Inter } from '@next/font/google';
 import { Col, Container, Row } from 'reactstrap';
 import styles from '@/styles/Product.module.scss';
 import CallToAction from 'components/About/CallToAction';
+import ContactModal from 'components/Modal/ContactModal';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -22,6 +23,12 @@ const DynamicWebPackages = dynamic(() => import('components/Home/WebPackages'), 
 
 
 const WebDevelopment = () => {
+    const [isContactModalOpen, setContactModalOpen] = useState(false);
+
+    const handleGetStartedClick = () => {
+        setContactModalOpen(!isContactModalOpen); // Toggle the state
+    };
+
     return (
         <>
             <Head>
@@ -33,13 +40,16 @@ const WebDevelopment = () => {
             <main className={`${styles.main}`}>
                 <DynamicHeader />
 
+                <ContactModal isOpen={isContactModalOpen} toggle={handleGetStartedClick} />
+
+
                 <section className={styles.banner}>
                     <Container>
                         <Row className='align-items-center'>
                             <Col className='col-lg-6 col-md-6 col-12'>
                                 <h1 className='text-white'>Web Development</h1>
                                 <p className='text-white'>Web-based projects are the projects of the future. As the best web design company in the USA, we function and deliver optimal performance like a mobile app. The Maze Digital team excels at bringing your concepts to life by engaging users, prioritizing responsive interactions, and considering web app development to be a legacy of web development.</p>
-                                <a href='/' className={`btn-style text-uppercase ${styles.btn_style}`}>Get Started</a>
+                                <button onClick={handleGetStartedClick} className={`btn-style text-uppercase ${styles.btn_style}`}>Get Started</button>
                             </Col>
                             <Col className='col-lg-6 col-md-6 col-12'>
                                 <figure>
@@ -115,7 +125,7 @@ const WebDevelopment = () => {
                                     We make a <strong>user-friendly design interface</strong> that is easy to navigate. Moreover, we promise to build
                                     an exceptional yet functional <strong>website design</strong>, boosting sales and revenue. The mobile-friendly and responsive
                                     website will ensure the <strong>web development services</strong> are up to the mark.</p>
-                                <a href='/' className='btn-style text-uppercase mt-3'>Get Started</a>
+                                <button onClick={handleGetStartedClick} className='btn-style text-uppercase mt-3'>Get Started</button>
                             </Col>
                             <Col className='col-lg-6 col-md-6 col-12'>
                                 <figure>

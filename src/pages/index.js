@@ -1,11 +1,12 @@
 import Head from 'next/head'
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import dynamic from 'next/dynamic'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.scss'
 import { Col, Container, Row } from 'reactstrap'
 import { motion, Variants } from "framer-motion";
 import MotionWrapper from 'components/MotionWrapper/MotionWrapper'
+import ContactModal from 'components/Modal/ContactModal'
 
 
 
@@ -71,11 +72,15 @@ const imageVariants = {
 
 
 export default function Home() {
-
-
-
   const introVideoRef = useRef(null);
   const introLoopVideoRef = useRef(null);
+
+  const [isContactModalOpen, setContactModalOpen] = useState(false);
+
+  const handleGetStartedClick = () => {
+    setContactModalOpen(!isContactModalOpen); // Toggle the state
+  };
+
 
   useEffect(() => {
     const introVideo = introVideoRef.current;
@@ -118,6 +123,9 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <DynamicHeader />
+        <ContactModal isOpen={isContactModalOpen} toggle={handleGetStartedClick} />
+
+
         {/* BANNER SECTION */}
         <section className={`${styles.banner} text-left`}>
           <div className="video-background">
@@ -434,7 +442,7 @@ export default function Home() {
                     </ul>
                   </Col>
                 </Row>
-                <a href='/' className='btn-style mt-5 d-none d-md-inline-block d-lg-inline-block'>Get Started</a>
+                <button className='btn-style mt-5 d-none d-md-inline-block d-lg-inline-block' onClick={handleGetStartedClick}>Get Started</button>
               </Col>
               <Col className='col-lg-5 col-md-6 col-12'>
                 <div className={`form_section`}>
@@ -474,7 +482,7 @@ export default function Home() {
                 </Col>
                 <Col className='col-lg-5 col-md-6 col-12'>
                   <p className='text-white'>“Great team to work with, they understood my requirements and helped me go live within hours, and delivered the results ahead of schedule."</p>
-                  <a href='#' className='text-uppercase btn-style border shadow-none'>Get Started</a>
+                  <button className='text-uppercase btn-style border shadow-none' onClick={handleGetStartedClick}>Get Started</button>
                 </Col>
               </Row>
             </div>

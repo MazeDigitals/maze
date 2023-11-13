@@ -7,6 +7,7 @@ import styles from '@/styles/Blog-detail.module.scss';
 import ReadsCard from 'components/Blogs/ReadsCard';
 import { AiOutlineClockCircle } from 'react-icons/ai';
 import RelatedBlog from 'components/Blogs/RelatedBlog';
+import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -146,7 +147,7 @@ const Blogs = () => {
                             <Col className='col-md-8 text-center'>
                                 <p className='text-white text-uppercase fs-3 mb-4'>READY TO START?</p>
                                 <h2 className='text-white mb-3'>Speak to an expert today about how Maze can ignite your vision.</h2>
-                                <a href='#' className='btn-style mt-3'>Let's Connect</a>
+                                <Link href='/contact' className='btn-style mt-3'>Let's Connect</Link>
                             </Col>
                         </Row>
                     </Container>

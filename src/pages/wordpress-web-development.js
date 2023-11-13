@@ -8,6 +8,7 @@ import Link from "next/link";
 import { Accordion, AccordionBody, AccordionHeader, AccordionItem } from 'reactstrap';
 import { gsap } from "gsap"
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import ContactModal from "components/Modal/ContactModal";
 
 
 gsap.registerPlugin(ScrollTrigger)
@@ -23,10 +24,16 @@ const DynamicFooter = dynamic(() => import("components/Footer/Footer"), {
 });
 
 const marketing = () => {
-
-
   const [open, setOpen] = useState('1');
-  const toggle = (id) => {
+
+  const [isContactModalOpen, setContactModalOpen] = useState(false);
+
+  const handleGetStartedClick = () => {
+    setContactModalOpen(!isContactModalOpen); // Toggle the state
+  };
+
+
+  const toggleAccordion = (id) => {
     if (open === id) {
       setOpen();
     } else {
@@ -114,6 +121,9 @@ const marketing = () => {
       </Head>
       <main className={`${styles.main}`}>
         <DynamicHeader />
+        <ContactModal isOpen={isContactModalOpen} toggle={handleGetStartedClick} />
+
+
         {/* Banner Section start */}
         <section className={styles.banner}>
           <div className={`${styles.box1} box1`} />
@@ -123,16 +133,16 @@ const marketing = () => {
             <Row className='align-items-center gy-4'>
               <Col className='col-lg-6 col-12'>
                 <div className={styles.wrapper}>
-                  <img src="/images/bg-star.svg" class="img-fluid" alt="Star" />
+                  <img src="/images/bg-star.svg" className="img-fluid" alt="Star" />
                   <h1 className="fs-5 fw-semibold opensans heading">TURN YOUR WEBSITE INTO A CONVERSION MACHINE</h1>
                   <h2 className="opensans heading">Professional, Affordable WordPress Solutions Tailored Just for You</h2>
                   <p className="fs-5 fw-normal opensans mb-4 heading">Your website isn't just a digital business card; it's a powerful marketing tool. At Maze Digital, we leverage the power of WordPress to craft websites that don't just look good but drive results.</p>
-                  <Link href="#" className="btn-style heading">Get Started today</Link>
+                  <button className="btn-style heading" onClick={handleGetStartedClick}>Get Started today</button>
                 </div>
               </Col>
               <Col className='col-lg-6 col-12'>
                 <figure>
-                  <img src="/images/banner-img.svg" class="img-fluid banner-img" alt="banner image" />
+                  <img src="/images/banner-img.svg" className="img-fluid banner-img" alt="banner image" />
                 </figure>
               </Col>
             </Row>
@@ -148,7 +158,7 @@ const marketing = () => {
                 <Col className='col-lg-3 col-sm-6 col-12'>
                   <div className={styles.info_box}>
                     <figure>
-                      <img src="/images/ranking.svg" class="img-fluid" alt="icon" />
+                      <img src="/images/ranking.svg" className="img-fluid" alt="icon" />
                     </figure>
                     <div className={styles.content}>
                       <h3>12k+</h3>
@@ -159,7 +169,7 @@ const marketing = () => {
                 <Col className='col-lg-3 col-sm-6 col-12'>
                   <div className={styles.info_box}>
                     <figure>
-                      <img src="/images/user-tick.svg" class="img-fluid" alt="icon" />
+                      <img src="/images/user-tick.svg" className="img-fluid" alt="icon" />
                     </figure>
                     <div className={styles.content}>
                       <h3>40+</h3>
@@ -170,7 +180,7 @@ const marketing = () => {
                 <Col className='col-lg-3 col-sm-6 col-12'>
                   <div className={styles.info_box}>
                     <figure>
-                      <img src="/images/timer-start.svg" class="img-fluid" alt="icon" />
+                      <img src="/images/timer-start.svg" className="img-fluid" alt="icon" />
                     </figure>
                     <div className={styles.content}>
                       <h3>100%</h3>
@@ -181,7 +191,7 @@ const marketing = () => {
                 <Col className='col-lg-3 col-sm-6 col-12'>
                   <div className={styles.info_box}>
                     <figure>
-                      <img src="/images/verified.svg" class="img-fluid" alt="icon" />
+                      <img src="/images/verified.svg" className="img-fluid" alt="icon" />
                     </figure>
                     <div className={styles.content}>
                       <h3>12+ years</h3>
@@ -201,7 +211,7 @@ const marketing = () => {
             <Row className="align-items-center gy-4">
               <Col className="col-md-6 col-12">
                 <figure className="image-reveal-container">
-                  <img src="/images/service-1.png" class="img-fluid hidden-image" alt="Services" />
+                  <img src="/images/service-1.png" className="img-fluid hidden-image" alt="Services" />
                 </figure>
               </Col>
               <Col className="col-md-6 col-12">
@@ -213,6 +223,7 @@ const marketing = () => {
           </Container>
         </section>
 
+
         <section className={`${styles.services_section} ${styles.bg}`}>
           <Container>
             <Row className="align-items-center gy-4">
@@ -223,7 +234,7 @@ const marketing = () => {
               </Col>
               <Col className="col-md-6 col-12">
                 <figure className="image-reveal-container">
-                  <img src="/images/service-2.png" class="img-fluid hidden-image" alt="Services" />
+                  <img src="/images/service-2.png" className="img-fluid hidden-image" alt="Services" />
                 </figure>
               </Col>
             </Row>
@@ -235,7 +246,7 @@ const marketing = () => {
           <Container>
             <Row className="justify-content-between gy-4">
               <Col className="col-md-12 col-12 text-center">
-                <h2 className="fs-5 fw-semibold mb-3 opensans"><img src="/images/logo-icon.png" class="img-fluid" alt="Services" /> MAZE DIGITAL</h2>
+                <h2 className="fs-5 fw-semibold mb-3 opensans"><img src="/images/logo-icon.png" className="img-fluid" alt="Services" /> MAZE DIGITAL</h2>
                 <h3 className="fw-bold opensans">Dependable WordPress Services</h3>
                 <p className="fs-4 fw-normal">From the initial design phase to ongoing support, Maze Digital has you covered.</p>
               </Col>
@@ -243,7 +254,7 @@ const marketing = () => {
               <Col className="col-md-5 col-12">
                 <div className={styles.wp_service_card}>
                   <figure>
-                    <img src="/images/wp-1.png" class="img-fluid" alt="icon" />
+                    <img src="/images/wp-1.png" className="img-fluid" alt="icon" />
                   </figure>
                   <div className={styles.content}>
                     <h4 className="fw-semibold mb-0 opensans">WordPress design</h4>
@@ -252,7 +263,7 @@ const marketing = () => {
                 </div>
                 <div className={styles.wp_service_card}>
                   <figure>
-                    <img src="/images/wp-2.png" class="img-fluid" alt="icon" />
+                    <img src="/images/wp-2.png" className="img-fluid" alt="icon" />
                   </figure>
                   <div className={styles.content}>
                     <h4 className="fw-semibold mb-0 opensans">WordPress development</h4>
@@ -261,7 +272,7 @@ const marketing = () => {
                 </div>
                 <div className={styles.wp_service_card}>
                   <figure>
-                    <img src="/images/wp-3.png" class="img-fluid" alt="icon" />
+                    <img src="/images/wp-3.png" className="img-fluid" alt="icon" />
                   </figure>
                   <div className={styles.content}>
                     <h4 className="fw-semibold mb-0 opensans">WordPress support</h4>
@@ -270,7 +281,7 @@ const marketing = () => {
                 </div>
                 <div className={styles.wp_service_card}>
                   <figure>
-                    <img src="/images/wp-4.png" class="img-fluid" alt="icon" />
+                    <img src="/images/wp-4.png" className="img-fluid" alt="icon" />
                   </figure>
                   <div className={styles.content}>
                     <h4 className="fw-semibold mb-0 opensans">WordPress maintenance</h4>
@@ -279,7 +290,7 @@ const marketing = () => {
                 </div>
                 <div className={styles.wp_service_card}>
                   <figure>
-                    <img src="/images/wp-5.png" class="img-fluid" alt="icon" />
+                    <img src="/images/wp-5.png" className="img-fluid" alt="icon" />
                   </figure>
                   <div className={styles.content}>
                     <h4 className="fw-semibold mb-0 opensans">WordPress retainers</h4>
@@ -289,9 +300,9 @@ const marketing = () => {
               </Col>
               <Col className="col-md-5 col-12">
                 <figure className={styles.img_wrapper}>
-                  <img src="/images/star-1.svg" class={`img-fluid ${styles.star}`} alt="Star" />
+                  <img src="/images/star-1.svg" className={`img-fluid ${styles.star}`} alt="Star" />
                   <figure className="image-reveal-container">
-                    <img src="/images/3d-image.png" class="img-fluid hidden-image" alt="3d rendering website hosting concept" />
+                    <img src="/images/3d-image.png" className="img-fluid hidden-image" alt="3d rendering website hosting concept" />
                   </figure>
                 </figure>
               </Col>
@@ -300,7 +311,11 @@ const marketing = () => {
               <Col className="col-12 text-center mt-5">
                 <div className={styles.button_wrapper}>
                   <hr />
-                  <Link href="#" className={`${styles.btnstyle}`}>GET STARTED NOW <img src="/images/arrow-long.svg" class="img-fluid" alt="Star" /></Link>
+                  <button className={`${styles.btnstyle}`}
+                    onClick={handleGetStartedClick}
+                  >GET STARTED NOW
+                    <img src="/images/arrow-long.svg" className="img-fluid" alt="Star" />
+                  </button>
                   <hr />
                 </div>
               </Col>
@@ -366,7 +381,7 @@ const marketing = () => {
                 </ul>
                 <h3 className="fs-4 fw-medium">Still have questions?</h3>
                 <p className="fs-5 fw-normal">We're here to assist. Chat with our dedicated team today for all your WordPress needs.</p>
-                <Link href="#" className="btn-style text-uppercase">Get In Touch</Link>
+                <button className="btn-style text-uppercase" onClick={handleGetStartedClick}>Get In Touch</button>
               </Col>
             </Row>
           </Container>
@@ -382,7 +397,7 @@ const marketing = () => {
               </Col>
 
               <Col className="col-md-8 col-12">
-                <Accordion open={open} toggle={toggle}>
+                <Accordion open={open} toggle={toggleAccordion}>
                   <AccordionItem>
                     <AccordionHeader targetId="1">
                       <h3 className="fs-5 opensans fw-semibold mb-0">What is Maze Digital's primary expertise?</h3>

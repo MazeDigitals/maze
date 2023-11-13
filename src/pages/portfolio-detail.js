@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Portfolio-detail.module.scss'
 import { Col, Container, Row } from 'reactstrap'
+import Link from 'next/link'
 
 
 
@@ -90,7 +91,7 @@ const PortfolioDetail = () => {
                             <Col className='col-md-8 text-center'>
                                 <p className='text-white text-uppercase fs-3 mb-4'>READY TO START?</p>
                                 <h2 className='text-white mb-3'>Speak to an expert today about how Maze can ignite your vision.</h2>
-                                <a href='#' className='btn-style mt-3'>Let's Connect</a>
+                                <Link href='/contact' className='btn-style mt-3'>Let's Connect</Link>
                             </Col>
                         </Row>
                     </Container>

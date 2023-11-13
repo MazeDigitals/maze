@@ -1,9 +1,11 @@
 import Head from 'next/head';
-import React from 'react';
+import React, { useState } from 'react';
 import dynamic from 'next/dynamic';
 import { Inter } from '@next/font/google';
 import { Col, Container, Row } from 'reactstrap';
 import styles from '@/styles/Product.module.scss';
+import ContactModal from 'components/Modal/ContactModal';
+import Link from 'next/link';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -19,6 +21,14 @@ const DynamicDesignPackages = dynamic(() => import('components/Home/DesignPackag
 })
 
 const ProductDesign = () => {
+
+    const [isContactModalOpen, setContactModalOpen] = useState(false);
+
+    const handleGetStartedClick = () => {
+      setContactModalOpen(!isContactModalOpen); // Toggle the state
+    };
+
+
     return (
         <>
             <Head>
@@ -30,13 +40,15 @@ const ProductDesign = () => {
             <main className={`${styles.main}`}>
                 <DynamicHeader />
 
+                <ContactModal isOpen={isContactModalOpen} toggle={handleGetStartedClick} />
+
                 <section className={styles.banner}>
                     <Container>
                         <Row className='align-items-center'>
                             <Col className='col-lg-6 col-md-6 col-12'>
                                 <h1 className='text-white'>Product Design</h1>
                                 <p className='text-white'>Great design results in great products. At Maze Digital, we promise to provide high-quality yet affordable product designs through our imaginative, high-end UI/UX wireframes and logo design. Through our unique and intuitive designs, we work towards branding your business successfully. Get started today with our services.</p>
-                                <a href='/' className={`btn-style text-uppercase ${styles.btn_style}`}>Get Started</a>
+                                <button onClick={handleGetStartedClick} className={`btn-style text-uppercase ${styles.btn_style}`}>Get Started</button>
                             </Col>
                             <Col className='col-lg-6 col-md-6 col-12'>
                                 <figure>
@@ -117,7 +129,7 @@ const ProductDesign = () => {
                                     <h3 className='fs-6 my-3'>Full support with top-notch Design Experts</h3>
                                     <p className='fs-7'>Our custom UI/UX designs are developed by highly skilled professionals who have sound knowledge of visual elements, screens, icons, buttons, and toggles while developing your desired website or application. </p>
                                     <p className='fs-7'>User Interface here refers to the website or application's design about color therapy, typography, design patterns, and interactivity & animation. User experience, on the other hand, refers to how customers will engage with the application or website. Everything here rounds up to the interaction of the customer with your product.</p>
-                                    <a href='/' className='btn-style text-uppercase mt-3'>Get Started</a>
+                                    <button onClick={handleGetStartedClick} className='btn-style text-uppercase mt-3'>Get Started</button>
                                 </div>
                             </Col>
                         </Row>
@@ -264,7 +276,7 @@ const ProductDesign = () => {
                                 <h3 className='fs-6 my-3'>Full support with top-notch Design Experts</h3>
                                 <p className='fs-7'>The team at Maze Digital exclusively offers design services, helping establish effective communication and coordination with the product and business knowledge and converting valuable ideas into the company's products and services. It is the most effective way to differentiate the position of your business in the emerging digital, fast-paced world.</p>
                                 <p className='fs-7'>Sign up now and avail the budget-friendly packages!</p>
-                                <a href='/' className='btn-style text-uppercase mt-3'>Get Started</a>
+                                <button onClick={handleGetStartedClick} className='btn-style text-uppercase mt-3'>Get Started</button>
                             </Col>
                             <Col className='col-lg-6 col-md-6 col-12'>
                                 <figure>
@@ -351,7 +363,7 @@ const ProductDesign = () => {
                             <Col className='col-md-8 text-center'>
                                 <p className='text-white text-uppercase fs-3 mb-4'>Kick start Your Business's Growth with</p>
                                 <h2 className='text-white mb-3'>Maze Digital's Team. Ignite Your Vision for a Better Future</h2>
-                                <a href='#' className='btn-style mt-3'>Let's Connect</a>
+                                <Link href='/contact' className='btn-style mt-3'>Let's Connect</Link>
                             </Col>
                         </Row>
                     </Container>

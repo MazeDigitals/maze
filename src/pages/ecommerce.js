@@ -1,9 +1,10 @@
 import Head from 'next/head';
-import React from 'react';
+import React, { useState } from 'react';
 import dynamic from 'next/dynamic';
 import { Inter } from '@next/font/google';
 import { Col, Container, Row } from 'reactstrap';
 import styles from '@/styles/Product.module.scss';
+import ContactModal from 'components/Modal/ContactModal';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -18,6 +19,14 @@ const DynamicECommercePackages = dynamic(() => import('components/Home/ECommerce
     ssr: false,
 })
 const Ecommerce = () => {
+
+    const [isContactModalOpen, setContactModalOpen] = useState(false);
+
+    const handleGetStartedClick = () => {
+      setContactModalOpen(!isContactModalOpen); // Toggle the state
+    };
+
+
     return (
         <>
             <Head>
@@ -29,13 +38,16 @@ const Ecommerce = () => {
             <main className={`${styles.main}`}>
                 <DynamicHeader />
 
+
+                <ContactModal isOpen={isContactModalOpen} toggle={handleGetStartedClick} />
+
                 <section className={styles.banner}>
                     <Container>
                         <Row className='align-items-center'>
                             <Col className='col-lg-6 col-md-6 col-12'>
                                 <h1 className='text-white'>Ecommerce</h1>
                                 <p className='text-white'>The term "e-commerce" refers to the exchange of goods and services online. E-commerce platforms are significantly rising in tandem with an increase in the speed at which e-commerce startups and businesses are expanding due to their substantial and commendable market value. Maze Digital excels at comprehending your e-commerce designs and defining your company's value precisely as you have imagined, which we communicate through our e-commerce services.</p>
-                                <a href='/' className={`btn-style text-uppercase ${styles.btn_style}`}>Get Started</a>
+                                <button className={`btn-style text-uppercase ${styles.btn_style}`} onClick={handleGetStartedClick}>Get Started</button>
                             </Col>
                             <Col className='col-lg-6 col-md-6 col-12'>
                                 <figure>
@@ -53,7 +65,7 @@ const Ecommerce = () => {
                             <Col className='col-lg-5 col-md-6 col-12'>
                                 <h2 className='fs-1'>Building a Dynamic <br /> E-Commerce Website</h2>
                                 <p className='fs-5'>Build your dynamic e-commerce website by hiring our professionals at Maze Digital. With continuous updating in data, we guarantee an up-to-date built dynamic website.</p>
-                                <a href='#' className='btn-style text-uppercase'>Get Started</a>
+                                <button onClick={handleGetStartedClick} className='btn-style text-uppercase'>Get Started</button>
                             </Col>
                             <Col className='col-lg-6 col-md-6 col-12'>
                                 <figure>
@@ -65,7 +77,7 @@ const Ecommerce = () => {
                             <Col className='col-lg-5 col-md-6 col-12'>
                                 <h2 className='fs-1'>Intuitive Mobile Apps</h2>
                                 <p className='fs-5'>Developing easy-to-use mobile applications within a budget that suits your pocket right away. Ensure that your customers understand the application's workflow within milliseconds! Sign us up today!</p>
-                                <a href='#' className='btn-style text-uppercase'>Get Started</a>
+                                <button onClick={handleGetStartedClick} className='btn-style text-uppercase'>Get Started</button>
                             </Col>
                             <Col className='col-lg-6 col-md-6 col-12'>
                                 <figure>
@@ -77,7 +89,7 @@ const Ecommerce = () => {
                             <Col className='col-lg-5 col-md-6 col-12'>
                                 <h2 className='fs-1'>Advanced Vendor Panel</h2>
                                 <p className='fs-5'>Less is always more! By determining your niche by finding appropriate vendors to fill the inventory, we develop an advanced vendor panel where you can successfully sell your products in the online marketplace.</p>
-                                <a href='#' className='btn-style text-uppercase'>Get Started</a>
+                                <button onClick={handleGetStartedClick} className='btn-style text-uppercase'>Get Started</button>
                             </Col>
                             <Col className='col-lg-6 col-md-6 col-12'>
                                 <figure>
@@ -89,7 +101,7 @@ const Ecommerce = () => {
                             <Col className='col-lg-5 col-md-6 col-12'>
                                 <h2 className='fs-1'>Powerful Admin Dashboard</h2>
                                 <p className='fs-5'>A powerful admin dashboard where one can be alerted about website downtime, build-ups of support queries, low stock, drop-offs in ad performance, and negative PR or social media backlash is equally important. It allows at-a-glance access to key data, KPIs, reports, and other important details. We are skilled in creating a powerful admin dashboard here at Maze Digital.</p>
-                                <a href='#' className='btn-style text-uppercase'>Get Started</a>
+                                <button onClick={handleGetStartedClick} className='btn-style text-uppercase'>Get Started</button>
                             </Col>
                             <Col className='col-lg-6 col-md-6 col-12'>
                                 <figure>
@@ -217,7 +229,7 @@ const Ecommerce = () => {
                                 </Col>
                                 <Col className='col-md-5 col-12'>
                                     <p className='text-white'>“Great team to work with, they understood my requirements and helped me go live within hours, and delivered the results ahead of schedule."</p>
-                                    <a href='#' className='text-uppercase btn-style border shadow-none'>Get Started</a>
+                                    <button onClick={handleGetStartedClick} className='text-uppercase btn-style border shadow-none'>Get Started</button>
                                 </Col>
                             </Row>
                         </div>

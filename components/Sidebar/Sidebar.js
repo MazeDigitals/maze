@@ -1,9 +1,10 @@
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
-import { Container, Nav, Navbar, NavbarBrand, NavItem, NavLink } from 'reactstrap';
+import { Container, Nav, Navbar, NavItem } from 'reactstrap';
 import styles from './Sidebar.module.scss';
 import logo from '../../src/images/logo-mob.svg'
 import { FaPhoneAlt } from 'react-icons/fa';
+import Link from 'next/link';
 
 
 const Sidebar = () => {
@@ -31,9 +32,9 @@ const Sidebar = () => {
         <header className={`bg-white ${styles.header} ${isSticky ? 'isSticky' : ''}`}>
             <Container>
                 <Navbar>
-                    <NavbarBrand href="/">
+                    <Link href="/">
                         <Image src={logo} alt="Logo" width={116} height={32} />
-                    </NavbarBrand>
+                    </Link>
                     <div className='d-flex align-items-center ms-auto'>
                         <a className={styles.cont_btn} href="tel:+1 330-999-8028"><FaPhoneAlt /></a>
                         <div className={`${styles.menuToggle} ${isOpen && styles.menuOpen}`} onClick={() => setIsOpen(!isOpen)}>
@@ -46,12 +47,24 @@ const Sidebar = () => {
             </Container>
             <div className={`${styles.menu} ${isOpen && styles.open_menu}`}>
                 <Nav className={styles.nav}>
-                    <NavItem className={styles.nav_item}><NavLink className={styles.nav_link} href='/about'>About Us</NavLink></NavItem>
-                    <NavItem className={styles.nav_item}><NavLink className={styles.nav_link} href='/product-design'>Services</NavLink></NavItem>
-                    <NavItem className={styles.nav_item}><NavLink className={styles.nav_link} href='/portfolio'>Portfolio</NavLink></NavItem>
-                    <NavItem className={styles.nav_item}><NavLink className={styles.nav_link} href='/'>Pricing</NavLink></NavItem>
-                    <NavItem className={styles.nav_item}><NavLink className={styles.nav_link} href='/blogs'>Blogs</NavLink></NavItem>
-                    <NavItem className={styles.nav_item}><NavLink className={styles.nav_link} href='/contact'>Contact us</NavLink></NavItem>
+                    <NavItem className={styles.nav_item}>
+                        <Link className={styles.nav_link} href='/about'>About Us</Link>
+                    </NavItem>
+                    <NavItem className={styles.nav_item}>
+                        <Link className={styles.nav_link} href='/product-design'>Services</Link>
+                    </NavItem>
+                    <NavItem className={styles.nav_item}>
+                        <Link className={styles.nav_link} href='/portfolio'>Portfolio</Link>
+                    </NavItem>
+                    <NavItem className={styles.nav_item}>
+                        <Link className={styles.nav_link} href='/'>Pricing</Link>
+                    </NavItem>
+                    <NavItem className={styles.nav_item}>
+                        <Link className={styles.nav_link} href='/blogs'>Blogs</Link>
+                    </NavItem>
+                    <NavItem className={styles.nav_item}>
+                        <Link className={styles.nav_link} href='/contact'>Contact us</Link>
+                    </NavItem>
                 </Nav>
             </div>
         </header>

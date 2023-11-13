@@ -1,34 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Col, Container, Row } from 'reactstrap'
 import Scrollbars from 'react-custom-scrollbars-2';
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Navigation } from "swiper";
-// import useSwiperRef from './useSwiperRef';
-
-// Import Swiper styles
-// import "swiper/css";
-// import "swiper/css/navigation";
+import ContactModal from 'components/Modal/ContactModal';
 
 
 
 function DesignPackages() {
-    // const [nextEl, nextElRef] = useSwiperRef();
-    // const [prevEl, prevElRef] = useSwiperRef();
+    const [isContactModalOpen, setContactModalOpen] = useState(false);
 
-
-    // const responsive = {
-    //     768: {
-    //         slidesPerView: 2,
-    //         spaceBetween: 20,
-    //     },
-    //     1024: {
-    //         slidesPerView: 3,
-    //         spaceBetween: 20,
-    //     },
-    // }
+    const handleGetStartedClick = () => {
+        setContactModalOpen(!isContactModalOpen); // Toggle the state
+    };
 
     return (
         <>
+            <ContactModal isOpen={isContactModalOpen} toggle={handleGetStartedClick} />
+
             <Container>
                 <Row>
                     <Col className='col-12 col-md-6 col-lg-4'>
@@ -37,7 +24,7 @@ function DesignPackages() {
                                 <span>Starter Package</span>
                                 <p>The package includes services to kick-start your business with our design and development services, consultation, and multiple revisions.</p>
                                 <h3 className='fs-3 fw-semibold'>$925/m</h3>
-                                <a href='' className={`button`}>Get Started</a>
+                                <button onClick={handleGetStartedClick} className={`button`}>Get Started</button>
                             </div>
                             <div className='p-5'>
                                 <Scrollbars style={{ height: 180 }}>
@@ -68,7 +55,7 @@ function DesignPackages() {
                                 <span>The Ultimate package</span>
                                 <p>The Ultimate package includes basic and customized services suited to your needs.</p>
                                 <h3 className='fs-3 fw-semibold'>$989/m</h3>
-                                <a href='' className={`button`}>Get Started</a>
+                                <button onClick={handleGetStartedClick} className={`button`}>Get Started</button>
                             </div>
                             <div className='p-5'>
                                 <Scrollbars style={{ height: 180 }}>
@@ -104,7 +91,7 @@ function DesignPackages() {
                                 <span>The Combo Package</span>
                                 <p>A combination of multiple services with unlimited revisions. It's all in your budget!</p>
                                 <h3 className='fs-3 fw-semibold'>$1,489/m</h3>
-                                <a href='' className={`button`}>Get Started</a>
+                                <button onClick={handleGetStartedClick} className={`button`}>Get Started</button>
                             </div>
                             <div className='p-5'>
                                 <Scrollbars style={{ height: 180 }}>
