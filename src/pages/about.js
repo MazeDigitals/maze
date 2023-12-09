@@ -34,7 +34,7 @@ const About = () => {
             <main className={styles.main}>
                 <DynamicHeader />
                 <section className={`${styles.banner} text-center`}>
-                    <img src='images/about-bg.svg' className={`${styles.bg_image}`} />
+                    <img src='images/about-bg.png' className={`${styles.bg_image}`} />
                     <Container>
                         <Row className='justify-content-center'>
                             <Col className='col-lg-4 col-md-8'>
@@ -58,7 +58,7 @@ const About = () => {
                                         <p>Our pricing strategy justifies the Maze Digital specialists' developed solutions without hesitation. We tend to make the process easy, enjoyable, and equally beneficial for both parties by adopting an "affordable" and "budget-friendly" approach.</p>
                                     </Col>
                                     <Col className='col-md-12 col-12'>
-                                        <figure><img src='images/about-img.svg' alt='img' className='img-fluid' /></figure>
+                                        <figure><img src='images/about-img.png' alt='img' className='img-fluid' /></figure>
                                     </Col>
                                 </Row>
                             </Col>
@@ -90,7 +90,7 @@ const About = () => {
                             </Col>
                         </Row>
                     </Container>
-                    <img src='images/globe.svg' alt="globe" className={`${styles.globe_img}`} />
+                    <img src='images/globe.png' alt="globe" className={`${styles.globe_img}`} />
                 </section>
 
 

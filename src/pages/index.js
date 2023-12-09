@@ -326,7 +326,7 @@ export default function Home() {
                   <Col className='col-md-6 col-12'>
                     <MotionWrapper>
                       <motion.figure variants={cardVariants} className='text-end'>
-                        <img src='/images/service-1.svg' alt="image" />
+                        <img src='/images/service-img-1.png' alt="image" />
                       </motion.figure>
                     </MotionWrapper>
                   </Col>
@@ -342,7 +342,7 @@ export default function Home() {
                   <Col className='col-md-6 col-12'>
                     <MotionWrapper>
                       <motion.figure variants={cardVariants} className='text-start'>
-                        <img src='/images/service-2.svg' alt="image" />
+                        <img src='/images/service-img-2.png' alt="image" />
                       </motion.figure>
                     </MotionWrapper>
                   </Col>
@@ -358,7 +358,7 @@ export default function Home() {
                   <Col className='col-md-6 col-12'>
                     <MotionWrapper>
                       <motion.figure variants={cardVariants} className='text-end'>
-                        <img src='/images/service-3.svg' alt="image" />
+                        <img src='/images/service-img-3.png' alt="image" />
                       </motion.figure>
                     </MotionWrapper>
                   </Col>

@@ -8,7 +8,7 @@
     }
 
     .banner {
-        background: url(../../public/images/lp_bg.svg) center/cover no-repeat;
+        background: url(../../public/images/lp_bg.png) center/cover no-repeat;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -60,7 +60,7 @@
             z-index: -1;
             top: 0;
             mix-blend-mode: multiply;
-            background: url(../../public/images/bg-logo.svg) left center/contain no-repeat;
+            background: url(../../public/images/bg-logo.png) left center/contain no-repeat;
         }
 
         .wrapper {
@@ -201,7 +201,7 @@
 
         &.wp_services {
             mix-blend-mode: multiply;
-            background: url(../../public/images/backgound-logo.svg) left center/auto no-repeat;
+            background: url(../../public/images/backgound-logo.png) left center/auto no-repeat;
 
             h2 {
                 display: flex;
