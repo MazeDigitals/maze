@@ -340,28 +340,28 @@ const marketing = () => {
                 <div className={`${styles.card} text-center`}>
                   <h3 className='fs-5 fw-normal'>Maze Digital is rated <br /> Excellent</h3>
                   <div className='d-flex align-items-center justify-content-center my-2'>
-                    <img src='/images/trustpilot-star.svg' alt="icon" />
-                    <img src='/images/trustpilot-star.svg' alt="icon" />
-                    <img src='/images/trustpilot-star.svg' alt="icon" />
-                    <img src='/images/trustpilot-star.svg' alt="icon" />
-                    <img src='/images/trustpilot-star.svg' alt="icon" />
+                    <img src='/images/trustpilot-star.svg' height={28} width={28} alt="icon" />
+                    <img src='/images/trustpilot-star.svg' height={28} width={28} alt="icon" />
+                    <img src='/images/trustpilot-star.svg' height={28} width={28} alt="icon" />
+                    <img src='/images/trustpilot-star.svg' height={28} width={28} alt="icon" />
+                    <img src='/images/trustpilot-star.svg' height={28} width={28} alt="icon" />
                   </div>
                   <p className='fs-7 fw-light'>Based on <strong className='fw-semibold'>456 reviews</strong></p>
-                  <span className='fs-6 fw-normal d-flex'><img src='/images/trustpilot-logo.svg' alt="icon" />Trustpilot</span>
+                  <span className='fs-6 fw-normal d-flex'><img src='/images/trustpilot-logo.svg' height={25} width={25} alt="icon" />Trustpilot</span>
                 </div>
               </Col>
               <Col className='col-lg-4 col-md-6 col-12'>
                 <div className={`${styles.card} text-center`}>
                   <h3 className='fs-5 fw-normal'>Maze Digital is rated with <br /> 4.8 Stars</h3>
                   <div className='d-flex align-items-center justify-content-center my-2'>
-                    <img src='/images/star.svg' alt="icon" />
-                    <img src='/images/star.svg' alt="icon" />
-                    <img src='/images/star.svg' alt="icon" />
-                    <img src='/images/star.svg' alt="icon" />
-                    <img src='/images/star.svg' alt="icon" />
+                    <img src='/images/star.svg' height={32} width={32} alt="icon" />
+                    <img src='/images/star.svg' height={32} width={32} alt="icon" />
+                    <img src='/images/star.svg' height={32} width={32} alt="icon" />
+                    <img src='/images/star.svg' height={32} width={32} alt="icon" />
+                    <img src='/images/star.svg' height={32} width={32} alt="icon" />
                   </div>
                   <p className='fs-7 fw-light'>Based on <strong className='fw-semibold'>152 reviews</strong></p>
-                  <span className='fs-6 fw-normal d-flex'><img src='/images/google.svg' alt="icon" />Google Reviews</span>
+                  <span className='fs-6 fw-normal d-flex'><img src='/images/google.svg' height={25} width={25} alt="icon" />Google Reviews</span>
                 </div>
               </Col>
             </Row>

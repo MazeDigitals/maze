@@ -7,6 +7,7 @@ import { Col, Container, Row } from 'reactstrap'
 import { motion, Variants } from "framer-motion";
 import MotionWrapper from 'components/MotionWrapper/MotionWrapper'
 import ContactModal from 'components/Modal/ContactModal'
+import Image from 'next/image'
 
 
 
@@ -222,7 +223,7 @@ export default function Home() {
                       }
                     }
                   }} className={`${styles.card}`}>
-                    <img src='/images/icon-1.svg' alt="icon" />
+                    <img src='/images/icon-1.svg' height={52} width={52} alt="icon" />
                     <h2>UI/UX Design</h2>
                     <p>With a great user interface and user experience, we ensure to define your business's motive just as you want it to be. With careful research concerning ongoing trends in the UI/UX world, the team at Maze Digital makes sure that our budget-friendly packages incorporate all the desired designing services you need from us!</p>
                   </motion.div>
@@ -245,7 +246,7 @@ export default function Home() {
                       }
                     }
                   }} className={`${styles.card}`}>
-                    <img src='/images/icon-2.svg' alt="icon" />
+                    <img src='/images/icon-2.svg' height={52} width={52} alt="icon" />
                     <h2>Design Service</h2>
                     <p>We provide logo designing services, keeping specific business niches in mind. A company's logo defines its core values, and the purpose served to its customers/clients. Our main motive is to also do the branding services by first illustrating the perfect logo design best suited for your business's mission and vision.</p>
                   </motion.div>
@@ -268,7 +269,7 @@ export default function Home() {
                       }
                     }
                   }} className={`${styles.card}`}>
-                    <img src='/images/icon-3.svg' alt="icon" />
+                    <img src='/images/icon-3.svg' height={52} width={52} alt="icon" />
                     <h2>Web Development</h2>
                     <p>The world is moving towards believing that websites can do wonders in digitally growing a business's potential. With the right SEO tools and web development knowledge, the team at Maze Digital expertizes in developing the exact website you need. It all comes down to bringing together a masterpiece in a budget-friendly package.</p>
                   </motion.div>
@@ -291,7 +292,7 @@ export default function Home() {
                       }
                     }
                   }} className={`${styles.card}`}>
-                    <img src='/images/icon-4.svg' alt="icon" />
+                    <img src='/images/icon-4.svg' height={52} width={52} alt="icon" />
                     <h2>Ecommerce</h2>
                     <p>The E-Commerce market is significantly growing at a much faster pace than ever. The experts at Maze Digital design and develop E-Commerce websites that possess responsive designs with user-friendly navigation, fulfilling the needs of our valuable clients.</p>
                   </motion.div>
@@ -326,7 +327,7 @@ export default function Home() {
                   <Col className='col-md-6 col-12'>
                     <MotionWrapper>
                       <motion.figure variants={cardVariants} className='text-end'>
-                        <img src='/images/service-img-1.png' alt="image" />
+                        <Image src='/images/service-img-1.png' className='img-fluid' alt="image" height={415} width={415} />
                       </motion.figure>
                     </MotionWrapper>
                   </Col>
@@ -342,7 +343,7 @@ export default function Home() {
                   <Col className='col-md-6 col-12'>
                     <MotionWrapper>
                       <motion.figure variants={cardVariants} className='text-start'>
-                        <img src='/images/service-img-2.png' alt="image" />
+                        <Image src='/images/service-img-2.png' className='img-fluid' alt="image" height={415} width={415} />
                       </motion.figure>
                     </MotionWrapper>
                   </Col>
@@ -358,7 +359,7 @@ export default function Home() {
                   <Col className='col-md-6 col-12'>
                     <MotionWrapper>
                       <motion.figure variants={cardVariants} className='text-end'>
-                        <img src='/images/service-img-3.png' alt="image" />
+                        <Image src='/images/service-img-3.png' className='img-fluid' alt="image" height={415} width={415} />
                       </motion.figure>
                     </MotionWrapper>
                   </Col>
@@ -384,28 +385,28 @@ export default function Home() {
                 <div className={`${styles.card} text-center`}>
                   <h3 className='fs-5 fw-normal'>Maze Digital is rated <br /> Excellent</h3>
                   <div className='d-flex align-items-center justify-content-center my-2'>
-                    <img src='/images/trustpilot-star.svg' alt="icon" />
-                    <img src='/images/trustpilot-star.svg' alt="icon" />
-                    <img src='/images/trustpilot-star.svg' alt="icon" />
-                    <img src='/images/trustpilot-star.svg' alt="icon" />
-                    <img src='/images/trustpilot-star.svg' alt="icon" />
+                    <img src='/images/trustpilot-star.svg' height={28} width={28} alt="icon" />
+                    <img src='/images/trustpilot-star.svg' height={28} width={28} alt="icon" />
+                    <img src='/images/trustpilot-star.svg' height={28} width={28} alt="icon" />
+                    <img src='/images/trustpilot-star.svg' height={28} width={28} alt="icon" />
+                    <img src='/images/trustpilot-star.svg' height={28} width={28} alt="icon" />
                   </div>
                   <p className='fs-7 fw-light'>Based on <strong className='fw-semibold'>456 reviews</strong></p>
-                  <span className='fs-6 fw-normal d-flex'><img src='/images/trustpilot-logo.svg' alt="icon" />Trustpilot</span>
+                  <span className='fs-6 fw-normal d-flex'><img src='/images/trustpilot-logo.svg' alt="icon" height={25} width={25} />Trustpilot</span>
                 </div>
               </Col>
               <Col className='col-lg-4 col-md-6 col-12'>
                 <div className={`${styles.card} text-center`}>
                   <h3 className='fs-5 fw-normal'>Maze Digital is rated with <br /> 4.8 Stars</h3>
                   <div className='d-flex align-items-center justify-content-center my-2'>
-                    <img src='/images/star.svg' alt="icon" />
-                    <img src='/images/star.svg' alt="icon" />
-                    <img src='/images/star.svg' alt="icon" />
-                    <img src='/images/star.svg' alt="icon" />
-                    <img src='/images/star.svg' alt="icon" />
+                    <img src='/images/star.svg' height={32} width={32} alt="icon" />
+                    <img src='/images/star.svg' height={32} width={32} alt="icon" />
+                    <img src='/images/star.svg' height={32} width={32} alt="icon" />
+                    <img src='/images/star.svg' height={32} width={32} alt="icon" />
+                    <img src='/images/star.svg' height={32} width={32} alt="icon" />
                   </div>
                   <p className='fs-7 fw-light'>Based on <strong className='fw-semibold'>152 reviews</strong></p>
-                  <span className='fs-6 fw-normal d-flex'><img src='/images/google.svg' alt="icon" />Google Reviews</span>
+                  <span className='fs-6 fw-normal d-flex'><img src='/images/google.svg' height={25} width={25} alt="icon" />Google Reviews</span>
                 </div>
               </Col>
             </Row>
