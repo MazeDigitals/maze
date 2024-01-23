@@ -98,6 +98,7 @@ const Footer = () => {
                             <ul>
                                 <li><a href='mailto:sales@mazedigitals.com' className='d-inline-flex'><FaRegEnvelope /> sales@mazedigitals.com <br />info@mazedigitals.com</a></li>
                                 <li><a href='tel:+1 330-999-8028'><FaPhoneAlt /> +1 330-999-8028</a></li>
+                                <li><a href='tel:+917 50 117 0371'><FaPhoneAlt />UAE : +917 50 117 0371</a></li>
                             </ul>
                         </Col>
                         <Col className='col-lg-3'>
@@ -106,6 +107,7 @@ const Footer = () => {
                                 <li><address>7901, 4th st N STE 5217,
                                     St.Peterburg FL, USA 33702</address></li>
                                 <li><address>Unit 13 1940 Ironstone Drive, Burlington, ON, Canada L5A3L7</address></li>
+                                <li><address>Office No. 14, Building @8, Dubai Media City, Dubai, AE</address></li>
                             </ul>
                         </Col>
                         <Col className='col-12 mt-4'>
