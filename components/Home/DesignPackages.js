@@ -23,7 +23,7 @@ function DesignPackages() {
                             <div className={`p-5 text-center border_bottom`}>
                                 <span>Starter Package</span>
                                 <p>The package includes services to kick-start your business with our design and development services, consultation, and multiple revisions.</p>
-                                <h3 className='fs-3 fw-semibold'>$925/m</h3>
+                                <h3 className='fs-3 fw-semibold'>$1200/m</h3>
                                 <button onClick={handleGetStartedClick} className={`button`}>Get Started</button>
                             </div>
                             <div className='p-5'>
@@ -54,7 +54,7 @@ function DesignPackages() {
                             <div className={`p-5 text-center border_bottom`}>
                                 <span>The Ultimate package</span>
                                 <p>The Ultimate package includes basic and customized services suited to your needs.</p>
-                                <h3 className='fs-3 fw-semibold'>$989/m</h3>
+                                <h3 className='fs-3 fw-semibold'>$1,285/m</h3>
                                 <button onClick={handleGetStartedClick} className={`button`}>Get Started</button>
                             </div>
                             <div className='p-5'>
@@ -90,7 +90,7 @@ function DesignPackages() {
                             <div className={`p-5 text-center border_bottom`}>
                                 <span>The Combo Package</span>
                                 <p>A combination of multiple services with unlimited revisions. It's all in your budget!</p>
-                                <h3 className='fs-3 fw-semibold'>$1,489/m</h3>
+                                <h3 className='fs-3 fw-semibold'>$1,935/m</h3>
                                 <button onClick={handleGetStartedClick} className={`button`}>Get Started</button>
                             </div>
                             <div className='p-5'>

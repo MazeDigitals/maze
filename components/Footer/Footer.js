@@ -36,6 +36,7 @@ const Footer = () => {
                                     <UncontrolledCollapse toggler="#toggler-1" className={styles.collapse_wrap}>
                                         <p className='text-white'>7901, 4th st N STE 5217, St.Peterburg FL, USA 33702</p>
                                         <p className='text-white'>Unit 13 1940 Ironstone Drive, Burlington, ON, Canada L5A3L7</p>
+                                        <p className='text-white'>Office No. 14, Building @8, Dubai Media City, Dubai, AE</p>
                                     </UncontrolledCollapse>
                                 </div>
                                 <div className={styles.menu_wrap}>
@@ -43,7 +44,8 @@ const Footer = () => {
                                     <UncontrolledCollapse toggler="#toggler-2" className={styles.collapse_wrap}>
                                         <ul>
                                             <li><a href='mailto:sales@mazedigitals.com' className='fs-6 d-inline-flex'><FaRegEnvelope /> sales@mazedigitals.com <br />info@mazedigitals.com</a></li>
-                                            <li><a href='tel:+1 330-999-8028' className='fs-6'><FaPhoneAlt /> +1 330-999-8028</a></li>
+                                            <li><a href='tel:+1 330-999-8028' className='fs-6'><FaPhoneAlt />US/CA : +1 330-999-8028</a></li>
+                                            <li><a href='tel:+1 330-999-8028' className='fs-6'><FaPhoneAlt />UAE : +917 50 117 0371</a></li>
                                         </ul>
                                     </UncontrolledCollapse>
                                 </div>

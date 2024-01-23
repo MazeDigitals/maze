@@ -464,7 +464,7 @@ export default function Home() {
                     </textarea>
                   </div>
                   <button className='btn-style w-100'>Lets Connect</button>
-                  <p className='fs-7 text-center mt-2'>Prefer Email? <a href='mailto:sale@mazeglobal.com'>sale@mazeglobal.com</a></p>
+                  {/* <p className='fs-7 text-center mt-2'>Prefer Email? <a href='mailto:sale@mazeglobal.com'>sale@mazeglobal.com</a></p> */}
                 </div>
               </Col>
             </Row>
