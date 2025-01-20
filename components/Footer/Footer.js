@@ -44,17 +44,18 @@ const Footer = () => {
                                     <UncontrolledCollapse toggler="#toggler-2" className={styles.collapse_wrap}>
                                         <ul>
                                             <li><a href='mailto:sales@mazedigitals.com' className='fs-6 d-inline-flex'><FaRegEnvelope /> sales@mazedigitals.com <br />info@mazedigitals.com</a></li>
-                                            <li><a href='tel:+1 330-999-8028' className='fs-6'><FaPhoneAlt />US\CA : +1 509 232 9749</a></li>
-                                            <li><a href='tel:+917 50 117 0371' className='fs-6'><FaPhoneAlt />UAE : +917 50 117 0371</a></li>
+                                            <li><a href='tel:+1 509-232-9749' className='fs-6'><FaPhoneAlt />US\CA : +1 509-232-9749</a></li>
+                                            <li><a href='tel:+917 52 591 9776' className='fs-6'><FaPhoneAlt />UAE : +917 52 591 9776</a></li>
                                         </ul>
                                     </UncontrolledCollapse>
                                 </div>
+                            
                                 <ul className={`${styles.socialIcons}`}>
                                     <li><a href='#'><FaLinkedinIn /></a></li>
                                     <li><a href='#'><FaFacebookF /></a></li>
                                     <li><a href='#'><FaInstagram /></a></li>
                                 </ul>
-                                <p className='text-center text-white fs-7 mb-2'>© 2024 Maze Digital. All rights reserved </p>
+                                <p className='text-center text-white fs-7 mb-2'>© 2025 Maze Digital. All rights reserved </p>
                                 <p className='text-center text-white fs-7'>
                                     <a className='text-white' href='#'>Terms of Use</a> |
                                     <a className='text-white' href='#'>Privacy Policy</a> |
@@ -97,8 +98,8 @@ const Footer = () => {
                             <h3>Get in Touch</h3>
                             <ul>
                                 <li><a href='mailto:sales@mazedigitals.com' className='d-inline-flex'><FaRegEnvelope /> sales@mazedigitals.com <br />info@mazedigitals.com</a></li>
-                                <li><a href='tel:+1 330-999-8028'><FaPhoneAlt />US\CA : +1 330-999-8028</a></li>
-                                <li><a href='tel:+917 50 117 0371'><FaPhoneAlt />UAE : +917 50 117 0371</a></li>
+                                <li><a href='tel:+1 509-232-9749'><FaPhoneAlt />US\CA : +1 509-232-9749</a></li>
+                                <li><a href='tel:+917 52 591 9776'><FaPhoneAlt />UAE : +917 52 591 9776</a></li>
                             </ul>
                         </Col>
                         <Col className='col-lg-3'>
@@ -114,7 +115,7 @@ const Footer = () => {
                             <ul className='d-flex align-items-center'>
                                 <li><a href='#' className='me-2'>Terms and Condition</a></li>
                                 <li><a href='#'>Privacy Policy</a></li>
-                                <li className='ms-auto'><p>© 2024 Maze Digital. All rights reserved </p></li>
+                                <li className='ms-auto'><p>© 2025 Maze Digital. All rights reserved </p></li>
                             </ul>
                         </Col>
                     </Row>
