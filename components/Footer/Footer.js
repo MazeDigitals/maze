@@ -44,7 +44,7 @@ const Footer = () => {
                                     <UncontrolledCollapse toggler="#toggler-2" className={styles.collapse_wrap}>
                                         <ul>
                                             <li><a href='mailto:sales@mazedigitals.com' className='fs-6 d-inline-flex'><FaRegEnvelope /> sales@mazedigitals.com <br />info@mazedigitals.com</a></li>
-                                            <li><a href='tel:+1 330-999-8028' className='fs-6'><FaPhoneAlt />US\CA : +1 330-999-8028</a></li>
+                                            <li><a href='tel:+1 330-999-8028' className='fs-6'><FaPhoneAlt />US\CA : +1 509 232 9749</a></li>
                                             <li><a href='tel:+917 50 117 0371' className='fs-6'><FaPhoneAlt />UAE : +917 50 117 0371</a></li>
                                         </ul>
                                     </UncontrolledCollapse>
