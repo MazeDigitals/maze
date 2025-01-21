@@ -45,7 +45,7 @@ const Footer = () => {
                                         <ul>
                                             <li><a href='mailto:sales@mazedigitals.com' className='fs-6 d-inline-flex'><FaRegEnvelope /> sales@mazedigitals.com <br />info@mazedigitals.com</a></li>
                                             <li><a href='tel:+1 509-232-9749' className='fs-6'><FaPhoneAlt />US\CA : +1 509-232-9749</a></li>
-                                            <li><a href='tel:+917 52 591 9776' className='fs-6'><FaPhoneAlt />UAE : +917 52 591 9776</a></li>
+                                            <li><a href='tel:+971 52 591 9776' className='fs-6'><FaPhoneAlt />UAE : +971 52 591 9776</a></li>
                                         </ul>
                                     </UncontrolledCollapse>
                                 </div>
@@ -99,7 +99,7 @@ const Footer = () => {
                             <ul>
                                 <li><a href='mailto:sales@mazedigitals.com' className='d-inline-flex'><FaRegEnvelope /> sales@mazedigitals.com <br />info@mazedigitals.com</a></li>
                                 <li><a href='tel:+1 509-232-9749'><FaPhoneAlt />US\CA : +1 509-232-9749</a></li>
-                                <li><a href='tel:+917 52 591 9776'><FaPhoneAlt />UAE : +917 52 591 9776</a></li>
+                                <li><a href='tel:+971 52 591 9776'><FaPhoneAlt />UAE : +971 52 591 9776</a></li>
                             </ul>
                         </Col>
                         <Col className='col-lg-3'>
