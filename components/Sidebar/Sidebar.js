@@ -36,7 +36,7 @@ const Sidebar = () => {
                         <Image src={logo} alt="Logo" width={116} height={32} />
                     </Link>
                     <div className='d-flex align-items-center ms-auto'>
-                        <a className={styles.cont_btn} href="tel:+1 330-999-8028"><FaPhoneAlt /></a>
+                        <a className={styles.cont_btn} href='tel:+1 509-232-9749'><FaPhoneAlt /></a>
                         <div className={`${styles.menuToggle} ${isOpen && styles.menuOpen}`} onClick={() => setIsOpen(!isOpen)}>
                             <span></span>
                             <span></span>

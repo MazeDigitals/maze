@@ -184,7 +184,7 @@ function Header() {
                             <Link className={`${styles.nav_link}`} href="/contact">Contact us</Link>
                         </NavItem>
                         <NavItem className={styles.nav_item}>
-                            <Link className={`${styles.nav_link} d-inline-flex align-items-center`} href='tel:+1 330-999-8028'><FaPhoneAlt /> +1 330-999-8028</Link>
+                            <Link className={`${styles.nav_link} d-inline-flex align-items-center`} href='tel:+1 509-232-9749'><FaPhoneAlt /> +1 509-232-9749</Link>
                         </NavItem>
                         <NavItem className={styles.nav_item}>
                             <button onClick={openEstimationModal} className={`btn-style m-0`}>ESTIMATE PROJECT</button>
