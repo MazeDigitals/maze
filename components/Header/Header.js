@@ -93,6 +93,9 @@ const ServiceMegaMenu = () => {
                             <li>
                                 <Link href='/wordpress-web-development'>WordPress Web Development <span>We provide WordPress Web Development services, keeping specific business niches in mind.</span></Link>
                             </li>
+                            <li>
+                                <Link href='/performance-marketing-services'>Performance Marketing Services<span>Performance Marketing Services are rapidly transforming how brands drive measurable results, focusing on ROI-driven strategies like never before. </span></Link>
+                            </li>
                         </ul>
 
                     </Col>
